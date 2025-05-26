@@ -23,7 +23,7 @@ const Navbar = () => {
     <>
       <div className="fixed top-0 left-0 w-full z-50">
         {/* Top Bar */}
-        <div className="w-full bg-[#500aab] text-white text-sm px-4 py-2">
+        <div className="w-full bg-[#7BAB0A] text-white text-sm px-4 py-2">
           <div className="mx-auto max-w-screen-xl flex justify-between">
             <div>Email: info@instantbillings.com | Call: +92 (316) 4578844</div>
             <div>Business hours: 9:00 to 5:00 | Monday to Friday</div>
