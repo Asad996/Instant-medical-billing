@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showMobileDropdown, setShowMobileDropdown] = useState(false); // 👈 new for mobile
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -38,7 +39,7 @@ const Navbar = () => {
               <div className="md:flex md:items-center md:gap-12">
                 <a className="block text-teal-600" href="#">
                   <span className="sr-only">Home</span>
-                 <img src="/Favicon/logo.png" alt="Logo" className="h-14" />
+                  <img src="/Favicon/logo.png" alt="Logo" className="h-14" />
                 </a>
               </div>
 
@@ -58,7 +59,7 @@ const Navbar = () => {
                       </li>
                     ))}
 
-                    {/* Specialties with dropdown */}
+                    {/* Specialties Dropdown */}
                     <li
                       className="relative group"
                       onMouseEnter={() => setShowDropdown(true)}
@@ -115,24 +116,47 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Mobile Overlay Menu */} 
+          {/* Mobile Menu */}
           {isOpen && (
             <div className="fixed top-[130px] left-0 w-full bg-white shadow-lg z-50">
-              <div className="px-4 py-4 space-y-4 text-sm">
-                <a className="block text-gray-700 hover:text-teal-600" href="#">About</a>
-                <a className="block text-gray-700 hover:text-teal-600" href="#">Careers</a>
-                <a className="block text-gray-700 hover:text-teal-600" href="#">History</a>
+              <div className="px-4 py-4 space-y-2 text-sm">
+                <a className="block text-gray-700 hover:text-teal-600" href="#">Who We Are</a>
                 <a className="block text-gray-700 hover:text-teal-600" href="#">Services</a>
-                <a className="block text-gray-700 hover:text-teal-600" href="#">Projects</a>
-                <a className="block text-gray-700 hover:text-teal-600" href="#">Blog</a>
-                <a className="block text-white bg-[#7BAB0A] text-center py-2 rounded hover:bg-[#7BAB0A]" href="#">Contact US</a>
+
+                {/* Mobile Specialties Toggle */}
+                <button
+                  onClick={() => setShowMobileDropdown(!showMobileDropdown)}
+                  className="w-full text-center text-gray-700 hover:text-teal-600 focus:outline-none"
+                >
+                  Specialties
+                </button>
+
+                {showMobileDropdown && (
+                  <div className="pl-4 space-y-1">
+                    {specialties.map((spec, i) => (
+                      <a
+                        key={i}
+                        href="#"
+                        className="block text-gray-600 hover:text-[#7BAB0A] transition"
+                      >
+                        {spec}
+                      </a>
+                    ))}
+                  </div>
+                )}
+
+                <a className="block text-gray-700 hover:text-teal-600" href="#">Contact US</a>
+
+                <a className="block text-white bg-[#7BAB0A] text-center py-2 rounded hover:bg-[#3f5213]" href="#">
+                  Contact US
+                </a>
               </div>
             </div>
           )}
         </header>
       </div>
 
-      {/* Push Content Down so it doesn't hide behind fixed navbar */}
+      {/* Spacer div for fixed navbar */}
       <div className="h-[96px]"></div>
     </>
   );

@@ -4,7 +4,7 @@ import backgroundImage from '../../public/img/background1.jpg';
 const Banner = () => {
   return (
     <section>
-      <div className="mx-auto max-w-screen-xl px-4 pt-10 pb-20 sm:px-6 md:pt-12 md:pb-24 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div className="mx-auto max-w-screen-xl px-4 pt-10  sm:px-6 md:pt-12 md:pb-24 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Left Text Content */}
         <div className="text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
