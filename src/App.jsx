@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Layout from './Layout/Layout'
 import Home from './Pages/Home'
-import Servicespages from './Pages/Servicespages'
+import Medicalbilling from './Pages/Medicalbilling'
+
 
 
 
@@ -15,7 +16,8 @@ function App() {
   <Routes>
     <Route element={<Layout/>}>
       <Route path='/' element={<Home/>} />
-      <Route path='/services' element={<Servicespages/>} />
+      <Route path='/medical-billing' element={<Medicalbilling/>} />
+
 
     </Route>
   </Routes>

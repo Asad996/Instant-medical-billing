@@ -1,39 +1,37 @@
-import React from 'react';
+import React from 'react'
 import imgicd from "../../public/img/ICD-10 Coding_ What You Need to Know for Efficient Medical Billing _ Zupyak.jpeg";
 
 const Banner3 = () => {
   return (
-    <>
-      <section
-        className="w-full h-auto bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${imgicd})`,
-        }}
-      >
-        <div className="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
-          <div className="text-center sm:text-left">
-            <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
-              Latest Shirts
-            </h2>
+    <section
+      className="w-full bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: `url(${imgicd})`,
+      }}
+    >
+      <div className="bg-black/60 w-full h-full px-4 py-16 sm:px-6 md:px-12 lg:px-24 lg:py-24 flex items-center">
+        <div className="w-full max-w-4xl mx-auto text-left sm:text-left">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#7BAB0A]">
+            Medical Billig 
+          </h2>
 
-            <p className="hidden max-w-xl text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore officia corporis quasi
-              doloribus iure architecto quae voluptatum beatae excepturi dolores.
-            </p>
+          <p className="mt-4 md:mt-6 text-sm sm:text-base md:text-lg text-white/90 leading-relaxed">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore officia corporis quasi
+            doloribus iure architecto quae voluptatum beatae excepturi dolores.
+          </p>
 
-            <div className="mt-4 sm:mt-8">
-              <a
-                href="#"
-                className="inline-block rounded-full bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:ring-3 focus:ring-yellow-400 focus:outline-none"
-              >
-                Get Yours Today
-              </a>
-            </div>
+          <div className="mt-6">
+            <a
+              href="#"
+              className="inline-block  bg-[#7BAB0A] px-8 py-3 text-sm sm:text-base font-medium text-white transition hover:bg-[#617e1e] focus:ring-3 focus:ring-yellow-400 focus:outline-none"
+            >
+              Get Yours Today
+            </a>
           </div>
         </div>
-      </section>
-    </>
-  );
-};
+      </div>
+    </section>
+  )
+}
 
-export default Banner3;
+export default Banner3
