@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import logo from '../assets/Favicon/logo.png'; // ✅ Image import
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
@@ -39,7 +39,7 @@ const Navbar = () => {
               <div className="md:flex md:items-center md:gap-12">
                 <a className="block text-teal-600" href="#">
                   <span className="sr-only">Home</span>
-                  <img src="/Favicon/logo.png" alt="Logo" className="h-14" />
+                  <img src={logo} alt="Logo" className="h-14" />
                 </a>
               </div>
 

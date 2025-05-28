@@ -1,10 +1,14 @@
 import React from 'react';
+import logo1 from '../assets/img/BBBlogo.PNG';
+import logo2 from '../assets/img/CMSlogo.PNG';
+import logo3 from '../assets/img/HIPAAlogo.PNG';
+import logo4 from '../assets/img/ISOlogo.PNG';
 
 const certificateLogos = [
-  { id: 1, src: '../../public/img/BBBlogo.PNG', alt: 'Certificate 1' },
-  { id: 2, src: '../../public/img/CMSlogo.PNG', alt: 'Certificate 2' },
-  { id: 3, src: '../../public/img/HIPAAlogo.PNG', alt: 'Certificate 3' },
-  { id: 4, src: '../../public/img/ISOlogo.PNG   ', alt: 'Certificate 4' },
+  { id: 1, src: logo1, alt: 'Certificate 1' },
+  { id: 2, src: logo2, alt: 'Certificate 2' },
+  { id: 3, src: logo3, alt: 'Certificate 3' },
+  { id: 4, src: logo4, alt: 'Certificate 4' },
 ];
 
 const CertificatesSection = () => {

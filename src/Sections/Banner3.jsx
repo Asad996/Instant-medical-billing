@@ -1,5 +1,5 @@
 import React from 'react'
-import imgicd from "../../public/img/ICD-10 Coding_ What You Need to Know for Efficient Medical Billing _ Zupyak.jpeg";
+import imgicd from "../assets/img/ICD-10 Coding_ What You Need to Know for Efficient Medical Billing _ Zupyak.jpeg";
 
 const Banner3 = () => {
   return (

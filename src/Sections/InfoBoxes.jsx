@@ -1,8 +1,8 @@
 import React from 'react';
-import treatment from '../../public/Favicon/configuration.png';
-import Clinics from '../../public/Favicon/hospital.png';
-import emergency from '../../public/Favicon/ambulance-lights.png';
-import healthcare from '../../public/Favicon/notes.png';
+import treatment from '../assets/Favicon/configuration.png';
+import Clinics from '../assets/Favicon/hospital.png';
+import emergency from '../assets/Favicon/ambulance-lights.png';
+import healthcare from '../assets/Favicon/notes.png';
 
 const boxData = [
   {
@@ -45,7 +45,7 @@ const InfoBoxes = () => {
                   className="w-12 h-12 object-contain   "
                 />
                 {/* Title Right */}
-                <h3 className="text-[#7BAB0A] font-semibold text-lg text-right ml-4">
+                <h3 className="text-black font-semibold text-lg text-right ml-4">
                   {box.title}
                 </h3>
               </div>

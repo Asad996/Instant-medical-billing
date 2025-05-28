@@ -1,4 +1,7 @@
 import React from 'react';
+import img1 from '../assets/img/medically-unlikely-edits.jpg';
+import img2 from '../assets/img/understanding-ncci-edits.jpg';
+import img3 from '../assets/img/understanding-clia-waivers.jpg';
 
 const blogData = [
   {
@@ -6,24 +9,21 @@ const blogData = [
     title: 'Blog Post One',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi.',
-    image:
-      '../../public/img/medically-unlikely-edits.jpg',
+    image: img1,
   },
   {
     id: 2,
     title: 'Blog Post Two',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia itaque minus soluta, voluptates.',
-    image:
-      '../../public/img/understanding-ncci-edits.jpg',
+    image: img2,
   },
   {
     id: 3,
     title: 'Blog Post Three',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi.',
-    image:
-      '../../public/img/understanding-clia-waivers.jpg',
+    image: img3,
   },
 ];
 
