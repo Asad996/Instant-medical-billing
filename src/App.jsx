@@ -5,10 +5,6 @@ import Layout from './Layout/Layout'
 import Home from './Pages/Home'
 import ServicePage from './Pages/ServicePage'
 
-
-
-
-
 function App() {
 
   return (
