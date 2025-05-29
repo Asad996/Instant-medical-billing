@@ -35,7 +35,7 @@ const Banner2 = () => {
       </div>
 
       {/* Image */}
-      <div>
+      <div className='hidden md:block'>
         <img
           alt="Medical Billing Illustration"
           src={protectionImage}

@@ -5,34 +5,35 @@ const features = [
     {
         title: "Medical Billing",
         description: "Get a 99% claims success ratio with HMS complete RCM services to streamline healthcare billing.",
-        link: "/medical-billing"
+        slug: "medical-billing"
     },
     {
         title: "Medical Coding",
         description: "Our medical coding services ensure that accurate CPT and ICD 10 coding are performed according to AMA.",
-        link: "/medical-coding"
+        slug: "medical-coding"
     },
     {
         title: "Credentialing",
         description: "With medical credentialing services, you can rest assured that your enrollment is performed accurately.",
-        link: "/credentialing"
+        slug: "credentialing"
     },
     {
         title: "Patient Payments",
         description: "Minimize your practices administrative costs and collect patient payments more efficiently with our solutions.",
-        link: "/patient-payments"
+        slug: "patient-payments"
     },
     {
         title: "Virtual Front Desk",
         description: "Manage your front office tasks, from scheduling appointments to getting patient feedback.",
-        link: "/virtual-front-desk"
+        slug: "virtual-front-desk"
     },
     {
         title: "Provider QPP",
         description: "Comply with quality payment program metrics by implementing CMS/NCQA guidelines related to MIPS and PCMH.",
-        link: "/provider-qpp"
+        slug: "provider-qpp"
     },
 ]
+
 
 
 const Services = () => {
@@ -65,11 +66,13 @@ const Services = () => {
                                     {feature.description}
                                 </p>
                                 <Link
-                                    to={feature.link}
+                                    to={`/servicespage/${feature.slug}`}
                                     className="mt-auto text-[#7BAB0A] hover:text-white hover:bg-[#7BAB0A] border border-[#7BAB0A] px-4 py-2 rounded transition duration-300 ease-in-out text-center"
                                 >
                                     Read More
                                 </Link>
+
+
 
                             </div>
                         </div>

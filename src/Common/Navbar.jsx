@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/Favicon/logo.png'; // ✅ Image import
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
@@ -27,7 +28,7 @@ const Navbar = () => {
         <div className="w-full bg-[#7BAB0A] text-white text-sm px-4 py-2">
           <div className="mx-auto max-w-screen-xl flex justify-between">
             <div>Email: info@instantbillings.com | Call: +92 (316) 4578844</div>
-            <div>Business hours: 9:00 to 510:00 | Monday to Friday</div>
+            <div>Business hours: 9:00 to 5:00 | Monday to Friday</div>
           </div>
         </div>
 
@@ -38,8 +39,7 @@ const Navbar = () => {
               {/* Logo */}
               <div className="md:flex md:items-center md:gap-12">
                 <a className="block text-teal-600" href="#">
-                  <span className="sr-only">Home</span>
-                  <img src={logo} alt="Logo" className="h-14" />
+                 <Link to="/"> <img src={logo} alt="Logo" className="h-14" /> </Link>
                 </a>
               </div>
 
@@ -96,7 +96,7 @@ const Navbar = () => {
               {/* Desktop Button */}
               <div className="hidden md:block">
                 <a className="rounded-md bg-[#7BAB0A] px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-[#3f5213] transition" href="#">
-                  Contact US
+                  Contact USA
                 </a>
               </div>
 

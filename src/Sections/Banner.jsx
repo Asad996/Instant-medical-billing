@@ -34,7 +34,7 @@ const Banner = () => {
         </div>
 
         {/* Right Image */}
-        <div className="w-full">
+        <div className="w-full hidden md:block">
           <img
             src={backgroundImage}
             alt="Banner"

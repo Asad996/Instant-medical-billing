@@ -9,7 +9,8 @@ import Banner2 from '../Sections/Banner2'
 import Blogs from '../Sections/Blogs'
 import ContactSection from '../Sections/ContactSection'
 import CertificatesSection from '../Sections/CertificatesSection'
-import TestimonialCarousel from '../Sections/TestimonialCarousel'
+import TestimonialCarousel from '../Shared/TestimonialCarousel'
+
 
 const Home = () => {
   return (
@@ -22,7 +23,7 @@ const Home = () => {
       <Blogs />
       <ContactSection />
       <CertificatesSection />
-      <TestimonialCarousel />
+     <TestimonialCarousel/>
     </>
   )
 }

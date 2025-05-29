@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Layout from './Layout/Layout'
 import Home from './Pages/Home'
-import Medicalbilling from './Pages/Medicalbilling'
+import ServicePage from './Pages/Servicepage'
 
 
 
@@ -16,7 +16,7 @@ function App() {
   <Routes>
     <Route element={<Layout/>}>
       <Route path='/' element={<Home/>} />
-      <Route path='/medical-billing' element={<Medicalbilling/>} />
+      <Route path='/servicespage/:serviceId' element={<ServicePage/>} />
 
 
     </Route>
