@@ -8,13 +8,12 @@ const Banner = () => {
         {/* Left Text Content */}
         <div className="text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Understand user flow and{' '}
-            <strong className="text-[#7BAB0A]">increase</strong> conversions
+           {' '}
+            <strong className="text-[#7BAB0A]">INSTANT</strong> Medical Billing Company
           </h1>
 
           <p className="mt-4 text-gray-700 text-base sm:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, nisi. Natus,
-            provident accusamus impedit minima harum corporis iusto.
+            Instant Billing is a comprehensive healthcare management services company dedicated to serving healthcare providers across the USA. We bring together quality, experience, and affordability to help grow your practice effectively.
           </p>
 
           <div className="mt-6 flex flex-col sm:flex-row gap-4">

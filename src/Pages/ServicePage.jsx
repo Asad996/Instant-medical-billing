@@ -20,7 +20,7 @@ const ServicePage = () => {
   return (
     <>
       <Banner3 data={service.banner} />
-      <InfoBoxes />
+      <InfoBoxes data={service.infobox} />
       <Imgbanner data={service.imageBanner} />
       <Qualities features={service.qualities} />
       <TestimonialCarousel />

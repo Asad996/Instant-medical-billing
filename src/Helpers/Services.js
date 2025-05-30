@@ -1,6 +1,14 @@
 // ---------------Medical Billing ------------------
 import bannerimg1 from "../assets/img/Download premium image of Doctors stethoscope on a white background by Teddy about wallpaper, white background, backgrounds, desktop wallpapers, and hospital 2297500.jpeg";
 import img1 from "../assets/img/Après l'augmentation de la franchise sur les….jpeg";
+
+
+import treatment from '../assets/Favicon/configuration.png';
+import Clinics from '../assets/Favicon/hospital.png';
+import emergency from '../assets/Favicon/ambulance-lights.png';
+import healthcare from '../assets/Favicon/notes.png';
+
+
 import logo1 from "../assets/Favicon/authorize.png";
 import logo2 from "../assets/Favicon/user.png";
 import logo3 from "../assets/Favicon/claim.png";
@@ -8,9 +16,26 @@ import logo4 from "../assets/Favicon/payment-system.png";
 import logo5 from "../assets/Favicon/follow-up.png";
 import logo6 from "../assets/Favicon/expenses.png";
 
+
+
+
+
 // ------------------Medical Coding---------------------
 import bannerimg2 from "../assets/img/ICD-10 Coding_ What You Need to Know for Efficient Medical Billing _ Zupyak.jpeg";
 import img2 from "../assets/img/Notes From an Everyday Superhero in Hospital….jpeg";
+
+import Urgent from '../assets/Favicon/hooter.png';
+import Family from '../assets/Favicon/medical.png';
+import Medicine from '../assets/Favicon/medicine.png';
+import Specialties from '../assets/Favicon/winner.png';
+
+import Telehealth from "../assets/Favicon/medical (1).png";
+import Audits from "../assets/Favicon/audit.png";
+import Coding from "../assets/Favicon/external.png";
+import Webinars from "../assets/Favicon/webinar.png";
+import Management from "../assets/Favicon/management.png";
+import Template from "../assets/Favicon/mockup-design.png";
+
 
 // ------------------------Credentialing------------------
 import bannerimg3 from "../assets/img/Free  Medical, Doctors, Blue Background Images, Medical Ribbons Stethoscope Doctor Background Photo Background PNG and Vectors.jpeg";
@@ -38,6 +63,28 @@ const Services = {
             image: bannerimg1,
         },
 
+        infobox: [
+            {
+                id: 1,
+                title: 'Diagnostic & Treatment Center',
+                logo: treatment,
+            },
+            {
+                id: 2,
+                title: 'Private Clinics & Group Practices',
+                logo: Clinics,
+            },
+            {
+                id: 3,
+                title: 'Urgent Care & Emergency Rooms',
+                logo: emergency,
+            },
+            {
+                id: 4,
+                title: 'Other Healthcare Specialties',
+                logo: healthcare,
+            },
+        ],
 
         imageBanner: {
             image: img1,
@@ -94,6 +141,29 @@ const Services = {
             description: "Our medical coding services cover all claims' coding to remove inaccuracies and boost reimbursements.",
             image: bannerimg2,
         },
+        infobox: [
+            {
+                id: 1,
+                title: 'Diagnostic & Treatment Center',
+                logo: Urgent,
+            },
+            {
+                id: 2,
+                title: 'Private Clinics & Group Practices',
+                logo: Family,
+            },
+            {
+                id: 3,
+                title: 'Urgent Care & Emergency Rooms',
+                logo: Medicine,
+            },
+            {
+                id: 4,
+                title: 'Other Healthcare Specialties',
+                logo: Specialties,
+            },
+        ],
+
 
 
         imageBanner: {
@@ -109,35 +179,35 @@ const Services = {
         },
         qualities: [
             {
-                icon: logo1,
+                icon: Telehealth,
                 title: 'Telehealth Coding',
                 description: 'Our medical coding and auditing cover all the aspects of telehealth and telemedicine coding, and we code and bill every telehealth service you provide.'
             },
             {
-                icon: logo2,
+                icon: Audits,
                 title: 'External Coding Audits',
                 description: 'Our medical coding auditor helps medical providers identify the ICD 10 and CPT coding discrepancies and suggest modifications after reviewing coding charts.'
             },
             {
-                icon: logo3,
+                icon: Coding,
                 title: 'Independent Coding Reviews',
                 description: 'By maintaining compliance and ensuring your practice gets the maximum reimbursement for services rendered, We tackle the rebuttals you receive from the insurance companies.'
             }
             ,
             {
-                icon: logo4,
+                icon: Webinars,
                 title: 'Provider Education Webinars',
                 description: 'Instant Billing offers meetings and educational webinars to healthcare providers to identify the revenue-losing area, providing the latest coding updates and compliance with industry standards.'
             }
             ,
             {
-                icon: logo5,
+                icon: Management,
                 title: 'Evaluation and Management E/M',
                 description: 'Comprehensive E/M coding services for all specialties, focusing on assigning error-free codes to ensure accurate medical decision making (MDM) for your practice.'
             }
             ,
             {
-                icon: logo6,
+                icon: Template,
                 title: 'Customized Template',
                 description: 'We offer customized templates to healthcare providers to create patients progress notes on performed services effectively and timely manner.'
             }
