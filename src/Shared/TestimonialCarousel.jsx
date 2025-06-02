@@ -41,43 +41,66 @@ const testimonials = [
 ];
 
 const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 1280 },
-    items: 3,
-  },
-  desktop: {
-    breakpoint: { max: 1280, min: 768 },
-    items: 2,
-  },
-  tablet: {
-    breakpoint: { max: 768, min: 640 },
-    items: 1,
-  },
-  mobile: {
-    breakpoint: { max: 640, min: 0 },
+  all: {
+    breakpoint: { max: 4000, min: 0 },
     items: 1,
   },
 };
 
 const TestimonialCarousel = () => {
   return (
-    <section className="text-gray-600 body-font">
-      <div className="container px-4 py-16 mx-auto">
-        <Carousel responsive={responsive} infinite autoPlay autoPlaySpeed={5000} arrows={true}>
+    <section className="text-gray-600 body-font w-full">
+      <div className="px-4 py-16 w-full max-w-screen-xl mx-auto">
+        <div className="relative text-center mb-20">
+          {/* Decorative Background Blob */}
+          <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
+            <div className="w-[600px] h-[200px] bg-[#7bab0a] opacity-30 rounded-full blur-3xl"></div>
+          </div>
+
+          {/* Content Layer (on top of the background) */}
+          <div className="relative z-10">
+            <h1 className="sm:text-[50px] text-4XL font-bold title-font text-[#7BAB0A] mb-4">
+             Success Stories
+            </h1>
+            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">
+           Why Instant Medical billing is The Best Medical Billing Company
+            </p>
+            <div className="flex mt-6 justify-center">
+              <div className="w-96 h-1 rounded-full bg-[#7BAB0A] inline-flex"></div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <Carousel
+          responsive={responsive}
+          infinite
+          autoPlay
+          autoPlaySpeed={5000}
+          arrows={false}
+          showDots={false}
+        >
           {testimonials.map((item, index) => (
-            <div key={index} className="px-20">
-              <div className="h-full text-center ">
-                <img
-                  alt={item.name}
-                  className="w-20 h-20 mb-4 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 mx-auto"
-                  src={item.image}
-                />
-                <p className="leading-relaxed text-sm">{item.message}</p>
-                <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
-                  {item.name}
-                </h2>
-                <p className="text-gray-500">{item.title}</p>
+            <div key={index} className="w-full px-4">
+              <div className=" p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                <p className="leading-relaxed text-base text-gray-700 w-4/5 mb-6">{item.message}</p>
+
+                <div className="flex items-center gap-4 mt-4">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-12 h-12 rounded-full object-cover border border-gray-300"
+                  />
+                  <div className="text-left">
+                    <h2 className="text-gray-900 font-semibold text-sm">{item.name}</h2>
+                    <p className="text-gray-500 text-sm">{item.title}</p>
+                  </div>
+                </div>
               </div>
             </div>
           ))}

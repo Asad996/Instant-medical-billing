@@ -14,7 +14,24 @@ const certificateLogos = [
 const CertificatesSection = () => {
   return (
     <section className=" px-5 text-center ">
-      <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-[#7BAB0A]">Certificates</h2>
+
+
+      <div className="relative text-center mb-20">
+        {/* Decorative Background Blob */}
+        <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
+          <div className="w-[600px] h-[200px] bg-[#7bab0a] opacity-30 rounded-full blur-3xl"></div>
+        </div>
+
+        {/* Content Layer (on top of the background) */}
+        <div className="relative z-10">
+          <h1 className="sm:text-[50px] text-4XL font-bold title-font text-[#7BAB0A] mb-4">
+          Certificates
+          </h1>
+          <div className="flex mt-6 justify-center">
+            <div className="w-96 h-1 rounded-full bg-[#7BAB0A] inline-flex"></div>
+          </div>
+        </div>
+      </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center justify-center max-w-4xl mx-auto">
         {certificateLogos.map((logo) => (

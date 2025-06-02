@@ -30,10 +30,31 @@ const blogData = [
 const Blogs = () => {
   return (
     <section className="px-4 py-16 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-[#7BAB0A] sm:text-4xl">Our Latest Blogs</h2>
-        <p className="mt-2 text-gray-600">Check out the latest news and articles</p>
+
+
+      <div className="relative text-center mb-20">
+        {/* Decorative Background Blob */}
+        <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
+          <div className="w-[600px] h-[200px] bg-[#7bab0a] opacity-30 rounded-full blur-3xl"></div>
+        </div>
+
+        {/* Content Layer (on top of the background) */}
+        <div className="relative z-10">
+          <h1 className="sm:text-[50px] text-4XL font-bold title-font text-[#7BAB0A] mb-4">
+            Our Latest Blogs
+          </h1>
+          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">
+            Check out the latest news and articles
+          </p>
+          <div className="flex mt-6 justify-center">
+            <div className="w-96 h-1 rounded-full bg-[#7BAB0A] inline-flex"></div>
+          </div>
+        </div>
       </div>
+
+
+
+
 
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {blogData.map((blog) => (

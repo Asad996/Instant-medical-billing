@@ -25,7 +25,7 @@ const Banner3 = ({ data }) => {
               href="#"
               className="inline-block bg-[#7BAB0A] px-8 py-3 text-sm sm:text-base font-medium text-white transition hover:bg-[#617e1e] focus:ring-3 focus:ring-yellow-400 focus:outline-none"
             >
-              Get Yours Today
+              Talk To An Expert Know
             </a>
           </div>
         </div>

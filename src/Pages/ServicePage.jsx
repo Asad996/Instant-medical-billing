@@ -8,6 +8,7 @@ import Imgbanner from '../Shared/Imgbanner';
 import Qualities from '../Shared/Qualitites';
 import TestimonialCarousel from '../Shared/TestimonialCarousel';
 import Contactlocation from '../Shared/Contactlocation';
+import ContactSection from '../Sections/ContactSection';
 
 const ServicePage = () => {
   const { serviceId } = useParams();
@@ -23,8 +24,9 @@ const ServicePage = () => {
       <InfoBoxes data={service.infobox} />
       <Imgbanner data={service.imageBanner} />
       <Qualities features={service.qualities} />
-      <TestimonialCarousel />
-      <Contactlocation />
+      {/* <TestimonialCarousel /> */}
+      {/* <Contactlocation /> */}
+      <ContactSection/>
     </>
   );
 };

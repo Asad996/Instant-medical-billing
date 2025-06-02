@@ -4,7 +4,7 @@ const Qualities = ({ features }) => {
   return (
     <div className="py-10 px-6 md:px-12 bg-white text-center pt-28">
       <h2 className="text-3xl md:text-4xl font-bold text-[#7BAB0A] mb-4">
-        Instant Medical Billing Transforming Medical Billing Services for Small Practices
+        Transforming Medical Billing Services for Small Practices with Instant Precision.
       </h2>
       <p className="text-gray-600 max-w-3xl mx-auto mb-10">
         Instant Medical Billing is the leading medical billing services company that delivers a reliable, swift, and reasonable pricing model to ensure that your practice gets the maximum reimbursement possible. We are a team of certified professional billers and coders covering every aspect of RCM billing services with utmost accuracy and efficiency.

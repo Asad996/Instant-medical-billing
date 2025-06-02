@@ -4,7 +4,7 @@ import logo from '../assets/Favicon/logo.png'; // ✅ Image import
 const Footer = () => {
     return (
         <>
-            <footer class="text-gray-600 body-font ">
+            <footer class="text-gray-600 body-font py-4 ">
                 <div class="container px-5 pt-12 mx-auto flex items-center sm:flex-row flex-col ">
                     <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                         <img src={logo} alt="" className='h-12' />

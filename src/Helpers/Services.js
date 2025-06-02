@@ -41,24 +41,75 @@ import Template from "../assets/Favicon/mockup-design.png";
 import bannerimg3 from "../assets/img/Free  Medical, Doctors, Blue Background Images, Medical Ribbons Stethoscope Doctor Background Photo Background PNG and Vectors.jpeg";
 import img3 from "../assets/img/cfb111f0-ee8f-44a9-8ad2-832eb8c6acab.jpeg";
 
+
+import Medicare from '../assets/Favicon/family.png';
+import Commercial from '../assets/Favicon/medical.png';
+import Worker from '../assets/Favicon/hand.png';
+import Tricare from '../assets/Favicon/stars.png';
+
+
+import Recredentialing from "../assets/Favicon/id-card.png";
+import Licensing from "../assets/Favicon/notes.png";
+import Enrollment from "../assets/Favicon/contract.png";
+import IPA from "../assets/Favicon/group.png";
+import Contract from "../assets/Favicon/agreement.png";
+import Accreditation from "../assets/Favicon/value.png";
+
 // ------------------------Patient Payments----------------------
 
 import bannerimg4 from "../assets/img/қауіпсіздігін, сапасы мен тиімділігін және….jpeg";
 import img4 from "../assets/img/Après l'augmentation de la franchise sur les….jpeg";
+
+import Copay from '../assets/Favicon/give-money.png';
+import CoInsurance from '../assets/Favicon/charity.png';
+import Deductible from '../assets/Favicon/calculater.png';
+import SelfPay from '../assets/Favicon/cash-withdrawal.png';
+
+
+import PatientStatements from "../assets/Favicon/allowed.png";
+import MailingStatements from "../assets/Favicon/open-mail.png";
+import PatientPayment from "../assets/Favicon/paid-content.png";
+
 
 // --------------------------------Virtual Front Desk-------------------
 
 import bannerimg5 from "../assets/img/Medicine doctor with stethoscope in hand on hospital background Medical technology Healthcare and Medical concept _ Premium Photo.jpeg";
 import img5 from "../assets/img/974cec08-3074-42ac-b998-e24dc4c0651d.jpeg";
 
+import PatientManagement from '../assets/Favicon/safety-at-work.png';
+import ChronicCare from '../assets/Favicon/medical.png';
+import RemotePatient from '../assets/Favicon/monitor.png';
+import Professional from '../assets/Favicon/group.png';
+
+
+import Scheduling from "../assets/Favicon/appointment.png";
+import Eligibility from "../assets/Favicon/authorize.png";
+import Referral from "../assets/Favicon/collaboration.png";
+import Calls from "../assets/Favicon/telephone-call.png";
+import Payments from "../assets/Favicon/give-money.png";
+import Feedback from "../assets/Favicon/feedback-survey.png";
+
 // -----------------------------------Provider QPP--------------------
 import bannerimg6 from "../assets/img/These are the best investments physicians can make.jpeg";
 import img6 from "../assets/img/763701a5-ec4a-445c-beec-fb918fcbef4c.jpeg";
 
+import HEDIS from '../assets/Favicon/charity.png';
+import PCMH from '../assets/Favicon/nursing-home.png';
+import MIPS from '../assets/Favicon/certificate.png';
+import CCM from '../assets/Favicon/responsibility.png';
+
+
+import improvement from "../assets/Favicon/inclusion.png";
+import Analysis from "../assets/Favicon/search-analysis.png";
+import Chart from "../assets/Favicon/seo-report.png";
+import practice from "../assets/Favicon/monitor.png";
+import facilitation from "../assets/Favicon/buliding.png";
+import report from "../assets/Favicon/agreement.png";
+
 const Services = {
     "medical-billing": {
         banner: {
-            title: "Medical Billing Services for Small Practices",
+            title: "Streamline Your Practice with Accurate & Efficient Medical Billing",
             description: "Don't settle for less when you can earn more. Make a transformative change in your revenue game with Instant medical billing services for small practices that empower small practices like yours to gain higher reimbursement rates.",
             image: bannerimg1,
         },
@@ -88,20 +139,20 @@ const Services = {
 
         imageBanner: {
             image: img1,
-            heading: "Affordable Medical Billing Services for Small Practices",
+            heading: "Over 10 Years of Excellence",
             paragraph1:
-                "We understand how essential it is to optimize your practice's revenue cycle management process. With our Cost-Effective Medical Billing Services for Small Practices, you can focus on patients' health as we take care of your administrative work.",
+                "At InstantBillings, we know that a healthy revenue cycle is critical to the success of your medical practice. Our cost-effective medical billing solutions are designed specifically for small to mid-sized practices—so you can stay focused on delivering quality care while we handle the billing complexities.",
             paragraph2:
-                "As a leading medical billing provider, we calculate every aspect to streamline and maximize your medical practice reimbursement. We guarantee a billing process where inconsistent codes aren't multiplying or claims getting piled up with multiple denials. We increase practices' revenue with correct claims submission while minimizing the denials.",
+                "We ensure smooth and accurate claim submissions, reduce errors, and work to maximize your reimbursements. Our experienced billing team eliminates the hassle of coding inconsistencies and frequent denials by maintaining high accuracy and compliance standards throughout the billing process.",
             paragraph3:
-                "Being a cost-effective billing company, HMS has the expertise to perform institutional and professional billing services. With the Quality first approach, we have scored a 90% claim pass ratio that makes us the best choice for your medical billing services.",
-            buttonText: "Contact Us",
+                "",
+
         },
         qualities: [
             {
                 icon: logo1,
                 title: 'Patient Preauthorization',
-                description: 'With our RCM billing services, you will get prior authorization from the insurance to perform a procedure and get reimbursement accordingly.'
+                description: 'At InstantBillings, we manage the full patient preauthorization process to secure insurance approval before procedures, helping your practice avoid denials and get paid on time.'
             },
             {
                 icon: logo2,
@@ -111,7 +162,7 @@ const Services = {
             {
                 icon: logo3,
                 title: 'Claim Submission',
-                description: 'Enable a 99% claim success ratio with Instant Billing clean claim submission process. Our coding and billing experts ensure your claims get paid accurately'
+                description: 'At InstantBillings, we manage patient preauthorizations to secure insurance approvals before procedures. This reduces claim denials and speeds up reimbursements. Our team handles coverage verification, documentation, and follow-ups—so you can focus on patient care.'
             }
             ,
             {
@@ -123,7 +174,7 @@ const Services = {
             {
                 icon: logo5,
                 title: 'A/R Follow-Up & Denial Management',
-                description: 'We continuously perform follow-ups for effective denial management to keep track of your A/R to improve the collections rate.'
+                description: 'We proactively follow up on accounts receivable and manage claim denials to boost your collections. Our persistent efforts help reduce outstanding balances and improve your practice’s cash flow.'
             }
             ,
             {
@@ -144,22 +195,22 @@ const Services = {
         infobox: [
             {
                 id: 1,
-                title: 'Diagnostic & Treatment Center',
+                title: 'Pediatric & Urgent Care',
                 logo: Urgent,
             },
             {
                 id: 2,
-                title: 'Private Clinics & Group Practices',
+                title: 'Family Medicine',
                 logo: Family,
             },
             {
                 id: 3,
-                title: 'Urgent Care & Emergency Rooms',
+                title: 'Internal Medicine',
                 logo: Medicine,
             },
             {
                 id: 4,
-                title: 'Other Healthcare Specialties',
+                title: 'Other Specialties',
                 logo: Specialties,
             },
         ],
@@ -174,8 +225,8 @@ const Services = {
             paragraph2:
                 "Based on the granular chart review, we empower healthcare providers with the knowledge and tools to optimize the medical coding process while educating them about services they can bill to insurance. With medical coding services, we PLUG revenue leaks that most practices are unaware of, instantly boosting their monthly reimbursement.",
             paragraph3:
-                "Our focus is on quality and accuracy to help ensure that our clients receive the reimbursement they are entitled to. We also offer educational services to healthcare providers to learn about the different services that they can bill to insurance companies. Our goal is to help practices optimize their medical coding process and improve their bottom line.",
-            buttonText: "Contact Us",
+                "Our focus is on quality and accuracy to help ensure that our clients receive the reimbursement they are entitled to. We also offer educational services to healthcare providers to learn about the different services that they can bill to insurance companies. Our goal is to help practices optimize their medical coding process and improve their bottom line.",
+
         },
         qualities: [
             {
@@ -222,54 +273,60 @@ const Services = {
             description: "Instant Billing enables you to get credentialed with commercial and non-commercial insurances.",
             image: bannerimg3,
         },
+        infobox: [
+            {
+                id: 1,
+                title: 'Medicare/ Medicaid Enrollment',
+                logo: Medicare,
+            },
+            {
+                id: 2,
+                title: 'Commercial Insurances',
+                logo: Commercial,
+            },
+            {
+                id: 3,
+                title: 'Worker Compensation',
+                logo: Worker,
+            },
+            {
+                id: 4,
+                title: 'Tricare',
+                logo: Tricare,
+            },
+        ],
+
 
 
         imageBanner: {
             image: img3,
             heading: "Provider Enrollment and Credentialing Services",
             paragraph1:
-                "Starting your practice and generating revenue is the first milestone for your growth. Our credentialing team hastens your authorization process with all payers, from application evaluation to maintaining your data per policies and CAQH profile. Our medical credentialing process begins with gathering provider enrollment documents and submitting them to insurance on your behalf.",
+                "Starting your practice and generating revenue is a critical milestone for growth. At InstantBillings, our credentialing team accelerates your authorization process with all payers—from evaluating applications to maintaining your data and CAQH profile. We handle the entire medical credentialing process, gathering provider enrollment documents and submitting them on your behalf.",
             paragraph2:
-                "Enrolling in health plans can be cumbersome and time-consuming if you are not experienced. The Instnat Billing credentialing team is knowledgeable and will work on your behalf to get you credentialed quickly and hassle-free.",
+                "Navigating health plan enrollments can be complex and time-consuming without experience. Our knowledgeable credentialing specialists work diligently to ensure you get credentialed quickly and hassle-free.",
             paragraph3:
-                "Instant Billing Provider enrollment and credentialing services ensure that you are credentialed and compliant with state and federal regulations to provide healthcare services. We consistently perform the follow-up on the application until your enrollment.",
-            buttonText: "Contact Us",
+                "With InstantBillings, you can trust that your provider enrollment and credentialing comply with all state and federal regulations. We consistently follow up on your applications until your enrollment is complete, so you can focus on delivering quality care.",
+
         },
         qualities: [
             {
-                icon: logo1,
+                icon: Recredentialing,
                 title: 'Recredentialing',
-                description: 'We periodically review and verify credentialing status to get you re-credentialed on time, so you dont have to face insurance denials.'
+                description: 'we proactively manage your recredentialing process by regularly reviewing and verifying your credentialing status. Our team ensures timely recredentialing with insurance payers to prevent service disruptions and avoid claim denials—so your practice stays compliant and financially secure.'
             },
             {
-                icon: logo2,
+                icon: Licensing,
                 title: 'Licensing',
-                description: 'Our provider enrollment and credentialing services help you get essential certifications, accreditations, and licenses to enroll with insurance successfully.'
+                description: 'InstantBillings supports healthcare providers in obtaining the necessary licenses, certifications, and accreditations required for successful insurance enrollment. As part of our provider enrollment and credentialing services, we guide you through the licensing process to ensure full compliance and a smooth start to billing insurance payers.'
             },
             {
-                icon: logo3,
+                icon: Enrollment,
                 title: 'Enrollment for Electronic Transactions',
-                description: 'Instant Billing gets you authorized with all the payers that allow you to send EDI, ERA, and EFT transactions without any inconvenience.'
+                description: 'InstantBillings streamlines your EDI, ERA, and EFT enrollment by securing authorization with all major payers. We manage the setup so you can send claims, receive payments, and remittance advice—fast and hassle-free.'
             }
             ,
-            {
-                icon: logo4,
-                title: 'IPA Enrollment',
-                description: 'Our credentialing consultants ensure to enroll you with insurances through the Integrated Provider Associations (IPA) on close panels.'
-            }
-            ,
-            {
-                icon: logo5,
-                title: 'Contract Renegotiation',
-                description: 'We negotiate with the insurance companies on your behalf to improve your contracted amount and enhance your practice reimbursement.'
-            }
-            ,
-            {
-                icon: logo6,
-                title: 'Accreditation',
-                description: 'Instant Billing accreditation services enable your practice to get formal recognition and affiliation to reduce enrollment holds with insurance agencies.'
-            }
-
+            
         ]
 
     },
@@ -279,6 +336,30 @@ const Services = {
             description: "Fully customizable patient billing and statement services to provide an end-to-end medical billing experience..",
             image: bannerimg4,
         },
+
+        infobox: [
+            {
+                id: 1,
+                title: 'Copay',
+                logo: Copay,
+            },
+            {
+                id: 2,
+                title: 'Co-Insurance',
+                logo: CoInsurance,
+            },
+            {
+                id: 3,
+                title: 'Deductible',
+                logo: Deductible,
+            },
+            {
+                id: 4,
+                title: 'Self Pay',
+                logo: SelfPay,
+            },
+        ],
+
 
 
         imageBanner: {
@@ -294,17 +375,17 @@ const Services = {
         },
         qualities: [
             {
-                icon: logo1,
+                icon: PatientStatements,
                 title: 'Patient Statements',
                 description: 'We use a secure practice management system to summarize patients balances for healthcare providers and generate easy-to-understand patient statements.'
             },
             {
-                icon: logo2,
+                icon: MailingStatements,
                 title: 'Mailing Statements',
                 description: 'Our staff uses a HIPAA-Complaint solution to send clinical responsibilities to patients while reducing the administrative burden for your front office.'
             },
             {
-                icon: logo3,
+                icon: PatientPayment,
                 title: 'Patient Payment Posting',
                 description: 'We proactively post the patient payment to the medical billing software while keeping track of all patient collections and outstanding balances.'
             }
@@ -321,6 +402,29 @@ const Services = {
             image: bannerimg5,
         },
 
+        infobox: [
+            {
+                id: 1,
+                title: 'Patient Management',
+                logo: PatientManagement,
+            },
+            {
+                id: 2,
+                title: 'Chronic Care Management',
+                logo: ChronicCare,
+            },
+            {
+                id: 3,
+                title: 'Remote Patient Monitoring',
+                logo: RemotePatient,
+            },
+            {
+                id: 4,
+                title: 'Professional Staffing',
+                logo: Professional,
+            },
+        ],
+
 
         imageBanner: {
             image: img5,
@@ -335,34 +439,34 @@ const Services = {
         },
         qualities: [
             {
-                icon: logo1,
+                icon: Scheduling,
                 title: 'Patient Scheduling and Confirmation',
                 description: 'Our front office staff create patient appointments, send reminders, and perform confirmation calls to make the scheduling seamless for patients and clinics.'
             },
             {
-                icon: logo2,
+                icon: Eligibility,
                 title: 'Eligibility and Authorization',
                 description: 'Proactively perform patient eligibility and get the pre-authorization from insurances for healthcare services, leading practice to reduce denial ratio and increase reimbursement.'
             },
             {
-                icon: logo3,
+                icon: Referral,
                 title: 'Referral Management',
                 description: 'Manage patient referral process with Instant Billing. Our team reaches out to a qualified medical specialist, arranges an appointment, and transmits the medical notes via an electronic system.'
             }
             ,
             {
-                icon: logo4,
+                icon: Calls,
                 title: 'Inbound and Outbound Calls',
                 description: 'We are always ready to manage the practice calls. Instant Billing handles patient communication and routing calls to the right person for your patient to have an effortless experience.'
             }
             ,
             {
-                icon: logo5,
+                icon: Payments,
                 title: 'Patient Payments Collection',
                 description: 'Our team assists your patients in performing electronic transactions based on the doctors directive. This process assures prompt payments and collection.'
             },
             {
-                icon: logo6,
+                icon: Feedback,
                 title: 'Patient Query and Feedback Management',
                 description: 'Quickly and easily handle patient queries and feedback With Instant Billing. We manage patient feedback to build and enhance your practices reputation and improve patient satisfaction.'
             }
@@ -378,6 +482,29 @@ const Services = {
             image: bannerimg6,
         },
 
+        infobox: [
+            {
+                id: 1,
+                title: 'HEDIS / Care Gaps',
+                logo: HEDIS ,
+            },
+            {
+                id: 2,
+                title: 'PCMH',
+                logo: PCMH,
+            },
+            {
+                id: 3,
+                title: 'MIPS',
+                logo: MIPS,
+            },
+            {
+                id: 4,
+                title: 'CCM & RPM',
+                logo: CCM ,
+            },
+        ],
+
 
         imageBanner: {
             image: img6,
@@ -392,34 +519,34 @@ const Services = {
         },
         qualities: [
             {
-                icon: logo1,
+                icon: improvement,
                 title: 'Quality improvement consulting',
                 description: 'We offer quality improvement consulting services to help you improve your performance on quality measures. Our consultants can provide customized assistance based on your needs to help you strategize, plan, and implement quality improvement initiatives.'
             },
             {
-                icon: logo2,
+                icon: Analysis,
                 title: 'Data Analysis and Reporting',
                 description: 'We offer data analysis and reporting services to help you understand your performance data. We can help you identify areas for improvement and track your progress over time so that you can make informed decisions about quality improvement initiatives.'
             },
             {
-                icon: logo3,
+                icon: Chart,
                 title: 'Chart reviews',
                 description: 'We take a collaborative approach to chart reviews that engages providers in the process. Our goal is to identify opportunities for quality improvement while maintaining the highest standards to protect patient privacy and confidentiality.'
             }
             ,
             {
-                icon: logo4,
+                icon: practice,
                 title: 'Initial practice assessment',
                 description: 'Instant Billing offers an initial practice assessment in which our team analyzes and reviews your practice against the NCQA standards. This will develop a road map for your PCMH recognition and certification.'
             }
             ,
             {
-                icon: logo5,
+                icon: facilitation,
                 title: 'Site visit facilitation',
                 description: 'We facilitate onsite visits from NCQA CCEs and help you meet PCMH certification requirements. This will ensure that your practice is prepared for the site visit and that you understand what to expect.'
             },
             {
-                icon: logo6,
+                icon: Analysis,
                 title: 'Gap analysis and report',
                 description: 'We will provide a detailed gap analysis report to help you understand the areas where your practice needs to improve to meet the PCMH standards. This ensures that you focus on the progress towards certification.'
             }

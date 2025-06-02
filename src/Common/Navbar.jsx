@@ -27,7 +27,7 @@ const Navbar = () => {
         {/* Top Bar */}
         <div className="w-full bg-[#7BAB0A] text-white text-sm px-4 py-2">
           <div className="mx-auto max-w-screen-xl flex justify-between">
-            <div>Email: info@instantbillings.com | Call: +92 (316) 4578844</div>
+            <div>Email: info@instantbillings.com </div>
             <div>Business hours: 9:00 to 5:00 | Monday to Friday</div>
           </div>
         </div>
@@ -96,7 +96,7 @@ const Navbar = () => {
               {/* Desktop Button */}
               <div className="hidden md:block">
                 <a className="rounded-md bg-[#7BAB0A] px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-[#3f5213] transition" href="#">
-                  Contact USA
+                  Contact US
                 </a>
               </div>
 

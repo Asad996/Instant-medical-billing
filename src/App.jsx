@@ -9,16 +9,16 @@ function App() {
 
   return (
     <>
-  <BrowserRouter>
-  <Routes>
-    <Route element={<Layout/>}>
-      <Route path='/' element={<Home/>} />
-      <Route path='/servicespage/:serviceId' element={<ServicePage/>} />
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path='/' element={<Home />} />
+            <Route path='/servicespage/:serviceId' element={<ServicePage/>} />
 
 
-    </Route>
-  </Routes>
-  </BrowserRouter>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

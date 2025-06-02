@@ -3,17 +3,17 @@ import React from 'react';
 const Imgbanner = ({ data }) => {
   if (!data) return null;
 
-  const { image, heading, paragraph1, paragraph2, paragraph3, buttonText } = data;
+  const { image, heading, paragraph1, paragraph2, paragraph3 } = data;
 
   return (
     <div className="flex flex-col md:flex-row items-stretch gap-8 pt-6 pb-0 px-6 md:pt-12 md:pb-0 md:px-12 bg-white">
       
       {/* Left Side - Image (Hidden on small screens) */}
-      <div className="w-full md:w-1/2 pt-0 md:pt-12 hidden md:block"> 
+      <div className="w-full md:w-1/2  hidden md:block"> 
         <img
           src={image}
           alt="Banner"
-          className="w-full h-96 object-cover rounded-xl shadow-md"
+          className="w-full h-[26rem] object-cover rounded-xl shadow-md"
         />
       </div>
 
@@ -25,9 +25,7 @@ const Imgbanner = ({ data }) => {
         <p className="text-gray-600">{paragraph1}</p>
         <p className="text-gray-600">{paragraph2}</p>
         <p className="text-gray-600">{paragraph3}</p>
-        <button className="mt-4 px-6 py-3 bg-[#7BAB0A] text-white rounded-xl hover:bg-[#5f7c1b] transition">
-          {buttonText}
-        </button>
+       
       </div>
     </div>
   );
