@@ -6,8 +6,6 @@ import Banner3 from '../Shared/Banner3';
 import InfoBoxes from '../Shared/InfoBoxes';
 import Imgbanner from '../Shared/Imgbanner';
 import Qualities from '../Shared/Qualitites';
-import TestimonialCarousel from '../Shared/TestimonialCarousel';
-import Contactlocation from '../Shared/Contactlocation';
 import ContactSection from '../Sections/ContactSection';
 
 const ServicePage = () => {

@@ -5,25 +5,25 @@ const ContactSection = () => {
     <section className="text-gray-600 body-font relative">
       <div className="container px-5 pt-2 pb-20 mx-auto">
 
-        <div className="relative text-center mb-20">
-          {/* Decorative Background Blob */}
-          <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
-            <div className="w-[600px] h-[200px] bg-[#7bab0a] opacity-30 rounded-full blur-3xl"></div>
-          </div>
 
-          {/* Content Layer (on top of the background) */}
-          <div className="relative z-10">
-            <h1 className="sm:text-[50px] text-4XL font-bold title-font text-[#7BAB0A] mb-4">
-              Contact Us
-            </h1>
-            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">
-              Schedule Your Free Consultation Today.
-            </p>
-            <div className="flex mt-6 justify-center">
-              <div className="w-96 h-1 rounded-full bg-[#7BAB0A] inline-flex"></div>
-            </div>
+
+
+        <div className="text-center mb-20">
+          <h1 className="sm:text-[50px] text-4xl font-bold title-font text-[#7BAB0A] mb-4">
+            Contact Us
+          </h1>
+          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600">
+            Schedule Your Free Consultation Today.
+          </p>
+          <div className="flex mt-6 justify-center">
+            <div className="w-96 h-1 rounded-full bg-[#7BAB0A] inline-flex"></div>
           </div>
         </div>
+
+
+
+
+
 
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
           <div className="flex flex-wrap -m-2">

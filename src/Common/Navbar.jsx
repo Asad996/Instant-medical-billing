@@ -94,11 +94,11 @@ const Navbar = () => {
               </div>
 
               {/* Desktop Button */}
-              <div className="hidden md:block">
+             <Link to="/contact"> <div className="hidden md:block">
                 <a className="rounded-md bg-[#7BAB0A] px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-[#3f5213] transition" href="#">
                   Contact US
                 </a>
-              </div>
+              </div></Link>
 
               {/* Mobile Toggle Button */}
               <div className="block md:hidden">

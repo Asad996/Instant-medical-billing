@@ -1,10 +1,15 @@
 import React from 'react'
+import Contactusbanner from '../Sections/Contactusbanner'
+import ContactSection2 from '../Sections/Contactsection2'
+
 
 const ContactUS = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+    
+    <Contactusbanner/>
+    <ContactSection2/>
+    </>
   )
 }
 

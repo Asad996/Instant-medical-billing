@@ -44,7 +44,7 @@ const Services = () => {
         <div className="container px-5 py-20 mx-auto">
 
           {/* Section Heading */}
-          <div className="text-center mb-20 relative z-10">
+          <div className="text-center mb-20">
             <h1 className="sm:text-[50px] text-4xl font-bold title-font text-[#7BAB0A] mb-4">
               OUR SERVICES
             </h1>
@@ -60,7 +60,7 @@ const Services = () => {
           <div className="flex flex-wrap -m-4">
             {features.map((feature, index) => (
               <div key={index} className="p-6 md:w-1/2 lg:w-1/3 w-full">
-                <div className="h-full bg-white rounded-lg p-6 border border-gray-200 flex flex-col justify-between transition duration-300 ease-in-out shadow-md transform hover:-translate-y-2 hover:shadow-xl hover:border-[#7BAB0A] hover:shadow-[#7BAB0A] shadow-[#7BAB0A]">
+                <div className="h-full bg-white rounded-lg p-6 border border-gray-200 flex flex-col justify-between transition duration-300 ease-in-out shadow-md transform hover:-translate-y-2 hover:shadow-xl ]">
                   <h2 className="text-xl font-semibold text-gray-900 mb-2 text-left">
                     {feature.title}
                   </h2>
