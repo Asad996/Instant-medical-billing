@@ -22,7 +22,7 @@ const contactInfo = [
 
 const Contactusbanner = () => {
   return (
-    <div className="relative w-full h-[400px] bg-cover bg-center bg-no-repeat text-white" style={{ backgroundImage: `url(${bgimg})` }}>
+    <div className= "relative w-full h-[400px] bg-cover bg-center bg-no-repeat text-white" style={{ backgroundImage: `url(${bgimg})` }}>
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
