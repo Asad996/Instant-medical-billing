@@ -147,9 +147,9 @@ const Navbar = () => {
 
                 <a className="block text-gray-700 hover:text-teal-600" href="#">Contact US</a>
 
-                <a className="block text-white bg-[#7BAB0A] text-center py-2 rounded hover:bg-[#3f5213]" href="#">
+               <Link to="/contact"> <a className="block text-white bg-[#7BAB0A] text-center py-2 rounded hover:bg-[#3f5213]" href="#">
                   Contact US
-                </a>
+                </a></Link>
               </div>
             </div>
           )}
