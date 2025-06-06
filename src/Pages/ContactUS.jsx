@@ -1,6 +1,7 @@
 import React from 'react'
 import Contactusbanner from '../Sections/Contactusbanner'
-import ContactSection2 from '../Sections/Contactsection2'
+import ContactSection2 from '../Sections/ContactSection2'
+
 
 
 const ContactUS = () => {
