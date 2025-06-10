@@ -1,13 +1,23 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const ContactSection = () => {
+  // Define the animation variants
+  const variants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <section className="text-gray-600 body-font relative">
+    <motion.section
+      className="text-gray-600 body-font relative"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false }} // Set to true if you want the animation to happen only once
+      variants={variants}
+      transition={{ duration: 0.5 }} // Adjust the duration as needed
+    >
       <div className="container px-5 pt-2 pb-20 mx-auto">
-
-
-
-
         <div className="text-center mb-20">
           <h1 className="sm:text-[50px] text-4xl font-bold title-font text-[#7BAB0A] mb-4">
             Contact Us
@@ -19,11 +29,6 @@ const ContactSection = () => {
             <div className="w-96 h-1 rounded-full bg-[#7BAB0A] inline-flex"></div>
           </div>
         </div>
-
-
-
-
-
 
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
           <div className="flex flex-wrap -m-2">
@@ -67,7 +72,7 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

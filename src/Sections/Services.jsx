@@ -1,6 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import bgimg from "../assets/img/bdfa8d23-3c52-4963-8378-272d465a9bb7.jpeg"
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import bgimg from "../assets/img/bdfa8d23-3c52-4963-8378-272d465a9bb7.jpeg";
+
 const features = [
   {
     title: "Medical Billing",
@@ -32,19 +34,39 @@ const features = [
     description: "Comply with quality payment program metrics by implementing CMS/NCQA guidelines related to MIPS and PCMH.",
     slug: "provider-qpp"
   },
-]
+];
+
+// Animation variants
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.2
+    }
+  }
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+};
 
 const Services = () => {
   return (
     <section
       className="text-gray-600 body-font bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${bgimg})` }} // 👈 Apna path lagayen
+      style={{ backgroundImage: `url(${bgimg})` }}
     >
       <div className="bg-white bg-opacity-90">
         <div className="container px-5 py-20 mx-auto">
-
           {/* Section Heading */}
-          <div className="text-center mb-20">
+          <motion.div
+            className="text-center mb-20"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <h1 className="sm:text-[50px] text-4xl font-bold title-font text-[#7BAB0A] mb-4">
               OUR SERVICES
             </h1>
@@ -54,13 +76,26 @@ const Services = () => {
             <div className="flex mt-6 justify-center">
               <div className="w-96 h-1 rounded-full bg-[#7BAB0A] inline-flex"></div>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Cards */}
-          <div className="flex flex-wrap -m-4">
+          {/* Cards Grid with staggered animation */}
+          <motion.div
+            className="flex flex-wrap -m-4"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
             {features.map((feature, index) => (
-              <div key={index} className="p-6 md:w-1/2 lg:w-1/3 w-full">
-                <div className="h-full bg-white rounded-lg p-6 border border-gray-200 flex flex-col justify-between transition duration-300 ease-in-out shadow-md transform hover:-translate-y-2 hover:shadow-xl ]">
+              <motion.div
+                key={index}
+                className="p-6 md:w-1/2 lg:w-1/3 w-full"
+                variants={cardVariants}
+              >
+                <motion.div
+                  whileHover={{ scale: 1.03 }}
+                  className="h-full bg-white rounded-lg p-6 border border-gray-200 flex flex-col justify-between shadow-md transition duration-300 ease-in-out hover:shadow-xl"
+                >
                   <h2 className="text-xl font-semibold text-gray-900 mb-2 text-left">
                     {feature.title}
                   </h2>
@@ -73,14 +108,14 @@ const Services = () => {
                   >
                     Read More
                   </Link>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;
