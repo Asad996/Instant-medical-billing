@@ -13,7 +13,7 @@ const InfoBoxes = ({ data }) => {
                 <img
                   src={box.logo}
                   alt={box.title}
-                  className="w-12 h-12 object-contain"
+                  className="w-12 h-12 object-contain "
                 />
                 <h3 className="text-black font-semibold text-lg text-center ml-4">
                   {box.title}

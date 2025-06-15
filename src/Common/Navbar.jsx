@@ -39,7 +39,7 @@ const Navbar = () => {
               {/* Logo */}
               <div className="md:flex md:items-center md:gap-12">
                 <a className="block text-teal-600" href="#">
-                 <Link to="/"> <img src={logo} alt="Logo" className="h-14" /> </Link>
+                  <Link to="/"> <img src={logo} alt="Logo" className="h-14" /> </Link>
                 </a>
               </div>
 
@@ -47,17 +47,27 @@ const Navbar = () => {
               <div className="hidden md:block">
                 <nav aria-label="Global">
                   <ul className="flex items-center gap-6 text-md relative">
-                    {["Who We Are", "Services", "Contact US"].map((item, index) => (
-                      <li key={index}>
-                        <a
-                          href="#"
-                          className="text-gray-500 hover:text-gray-800 relative group"
-                        >
-                          {item}
-                          <span className="block h-0.5 w-0 bg-[#7BAB0A] group-hover:w-full transition-all duration-300"></span>
-                        </a>
-                      </li>
-                    ))}
+                    <li>
+                      <Link
+                        to="/"
+                        className="text-gray-500 hover:text-gray-800 relative group"
+                      >
+                        Who We Are
+                        <span className="block h-0.5 w-0 bg-[#7BAB0A] group-hover:w-full transition-all duration-300"></span>
+                      </Link>
+                    </li>
+
+                   
+
+                    <li>
+                      <Link
+                        to="/Blogpage"
+                        className="text-gray-500 hover:text-gray-800 relative group"
+                      >
+                        Blogs
+                        <span className="block h-0.5 w-0 bg-[#7BAB0A] group-hover:w-full transition-all duration-300"></span>
+                      </Link>
+                    </li>
 
                     {/* Specialties Dropdown */}
                     <li
@@ -65,25 +75,21 @@ const Navbar = () => {
                       onMouseEnter={() => setShowDropdown(true)}
                       onMouseLeave={() => setShowDropdown(false)}
                     >
-                      <a
-                        href="#"
-                        className="text-gray-500 hover:text-gray-800 relative group"
-                      >
+                      <span className="text-gray-500 hover:text-gray-800 relative group cursor-pointer">
                         Specialties
                         <span className="block h-0.5 w-0 bg-[#7BAB0A] group-hover:w-full transition-all duration-300"></span>
-                      </a>
+                      </span>
 
-                      {/* Dropdown */}
                       {showDropdown && (
                         <ul className="absolute left-0 mt-2 w-56 bg-white shadow-lg border border-gray-100 rounded-lg z-50">
                           {specialties.map((spec, i) => (
                             <li key={i}>
-                              <a
-                                href="#"
+                              <Link
+                                to={`/specialties/${spec.toLowerCase().replace(/\s+/g, '-')}`}
                                 className="block px-4 py-2 text-gray-700 hover:bg-[#f0fdf4] hover:text-[#7BAB0A] transition"
                               >
                                 {spec}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -93,8 +99,9 @@ const Navbar = () => {
                 </nav>
               </div>
 
+
               {/* Desktop Button */}
-             <Link to="/contact"> <div className="hidden md:block">
+              <Link to="/contact"> <div className="hidden md:block">
                 <a className="rounded-md bg-[#7BAB0A] px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-[#3f5213] transition" href="#">
                   Contact US
                 </a>
@@ -147,7 +154,7 @@ const Navbar = () => {
 
                 <a className="block text-gray-700 hover:text-teal-600" href="#">Contact US</a>
 
-               <Link to="/contact"> <a className="block text-white bg-[#7BAB0A] text-center py-2 rounded hover:bg-[#3f5213]" href="#">
+                <Link to="/contact"> <a className="block text-white bg-[#7BAB0A] text-center py-2 rounded hover:bg-[#3f5213]" href="#">
                   Contact US
                 </a></Link>
               </div>

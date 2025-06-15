@@ -3,7 +3,7 @@ import React from 'react'
 import Banner from '../Sections/Banner'
 import Services from '../Sections/Services'
 import Experience from '../Sections/Experience'
-import Specialeties from '../Sections/Specialeties'
+import Specialetie from '../Sections/Specialetie'
 import Banner2 from '../Sections/Banner2'
 
 import Blogs from '../Sections/Blogs'
@@ -18,9 +18,9 @@ const Home = () => {
       <Banner />
       <Services />
       <Experience />
-      <Specialeties />
+      <Specialetie />
       <Banner2 />
-      <Blogs />
+      <Blogs  showAll={false} />
       <ContactSection />
       <CertificatesSection />
      <TestimonialCarousel/>

@@ -4,17 +4,17 @@ import bgimg from '../assets/img/8de1f6a4-d72a-4828-91e4-62a71d506312.jpg';
 
 const contactInfo = [
   {
-    icon: <FaPhoneAlt className="text-3xl text-green-600 mb-3" />,
+    icon: <FaPhoneAlt className="text-3xl text-[#7BAB0A] mb-3" />,
     title: 'Call Us',
     description: 'Reach us by phone for immediate support or inquiries.',
   },
   {
-    icon: <FaMapMarkerAlt className="text-3xl text-green-600 mb-3" />,
+    icon: <FaMapMarkerAlt className="text-3xl text-[#7BAB0A] mb-3" />,
     title: 'Our Location',
     description: 'Visit our office at your convenience during business hours.',
   },
   {
-    icon: <FaEnvelope className="text-3xl text-green-600 mb-3" />,
+    icon: <FaEnvelope className="text-3xl text-[#7BAB0A] mb-3" />,
     title: 'Email Us',
     description: 'Send us your questions and we’ll get back to you promptly.',
   },
