@@ -1,5 +1,5 @@
 // ---------------Medical Billing ------------------
-import bannerimg1 from "../assets/img/Download premium image of Doctors stethoscope on a white background by Teddy about wallpaper, white background, backgrounds, desktop wallpapers, and hospital 2297500.jpeg";
+import bannerimg1 from "../assets/img/Free  Medical, Doctors, Blue Background Images, Medical Ribbons Stethoscope Doctor Background Photo Background PNG and Vectors.jpeg"
 import img1 from "../assets/img/Après l'augmentation de la franchise sur les….jpeg";
 
 
