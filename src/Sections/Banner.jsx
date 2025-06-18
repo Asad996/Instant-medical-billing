@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import backgroundImage from '../assets/img/background1.jpg';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
   return (
@@ -23,19 +24,14 @@ const Banner = () => {
             InstantBillings delivers personalized, accurate, and efficient medical billing services—designed to fit your practice’s unique requirements.
           </p>
 
-          <div className="mt-6 flex flex-col sm:flex-row gap-4">
-            <a
+          <div className="mt-6">
+        <Link to="/contact">  <a
               className="inline-block rounded bg-[#7BAB0A] px-6 py-3 text-white font-medium shadow hover:bg-[#5f7c1a] transition"
               href="#"
             >
-              Get Started
-            </a>
-            <a
-              className="inline-block rounded border border-gray-300 px-6 py-3 text-gray-700 font-medium shadow hover:bg-gray-100"
-              href="#"
-            >
-              Learn More
-            </a>
+              Consult Schedule
+            </a> </Link>
+            
           </div>
         </motion.div>
 

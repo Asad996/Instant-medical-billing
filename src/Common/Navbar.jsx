@@ -125,10 +125,10 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           {isOpen && (
-            <div className="fixed top-[130px] left-0 w-full bg-white shadow-lg z-50">
-              <div className="px-4 py-4 space-y-2 text-sm">
-                <a className="block text-gray-700 hover:text-teal-600" href="#">Who We Are</a>
-                <a className="block text-gray-700 hover:text-teal-600" href="#">Services</a>
+            <div className="fixed top-[118px] left-0 w-full bg-white shadow-lg z-50">
+              <div className="px-4 py-4 space-y-4 text-sm">
+                <a className="block text-gray-700 hover:text-teal-600" href="#"><Link to="/">Who We Are</Link></a>
+               <a className="block text-gray-700 hover:text-teal-600" href="#"> <Link to="/Blogpage">Blog</Link></a>
 
                 {/* Mobile Specialties Toggle */}
                 <button
@@ -152,9 +152,9 @@ const Navbar = () => {
                   </div>
                 )}
 
-                <a className="block text-gray-700 hover:text-teal-600" href="#">Contact US</a>
+                
 
-                <Link to="/contact"> <a className="block text-white bg-[#7BAB0A] text-center py-2 rounded hover:bg-[#3f5213]" href="#">
+                <Link to="/contact"> <a className="block text-white bg-[#7BAB0A] text-center py-2 mt-6 rounded hover:bg-[#3f5213]" href="#">
                   Contact US
                 </a></Link>
               </div>

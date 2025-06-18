@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import blogData from '../Helpers/blogData';
+import sanityClient from '../Sanity/sanityClient';
 
 const cardVariants = {
   hidden: { opacity: 0, scale: 0.9, y: 30 },
@@ -18,11 +18,32 @@ const cardVariants = {
 };
 
 const Blogs = ({ showAll = false }) => {
-  const blogsToShow = showAll ? blogData : blogData.slice(0, 3);
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(`*[_type == "post"] | order(publishedAt desc){
+        _id,
+        title,
+        slug,
+        mainImage{ asset->{url} },
+        body
+      }`)
+      .then((data) => {
+        const limited = showAll ? data : data.slice(0, 3);
+        setBlogs(limited);
+      })
+      .catch(console.error);
+  }, [showAll]);
+
+  const extractText = (blocks) => {
+    if (!blocks || !Array.isArray(blocks)) return '';
+    const block = blocks.find(b => b._type === 'block' && b.children);
+    return block?.children?.map(c => c.text).join(' ') || '';
+  };
 
   return (
-    <section className="px-4 py-16 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
-      {/* Header */}
+    <section className="px-4 py-16 mx-auto max-w-screen-xl">
       <motion.div
         className="text-center mb-20"
         initial={{ opacity: 0, y: -30 }}
@@ -41,11 +62,10 @@ const Blogs = ({ showAll = false }) => {
         </div>
       </motion.div>
 
-      {/* Blog Cards */}
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {blogsToShow.map((blog, i) => (
+        {blogs.map((blog, i) => (
           <motion.article
-            key={blog.id}
+            key={blog._id}
             className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md"
             custom={i}
             variants={cardVariants}
@@ -53,25 +73,28 @@ const Blogs = ({ showAll = false }) => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <img alt={blog.title} src={blog.image} className="h-56 w-full object-cover" />
+            <img
+              alt={blog.title}
+              src={blog.mainImage?.asset?.url}
+              className="h-56 w-full object-cover"
+            />
             <div className="p-4 sm:p-6">
               <h3 className="text-lg font-medium text-gray-900">{blog.title}</h3>
-              <p className="mt-2 line-clamp-3 text-sm text-gray-500">{blog.description}</p>
+              <p className="mt-2 line-clamp-3 text-sm text-gray-500">
+                {extractText(blog.body).slice(0, 150) || 'No preview available...'}
+              </p>
               <Link
-                to={`/blog/${blog.id}`}
+                to={`/blog/${blog.slug.current}`}
                 className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-[#7BAB0A]"
               >
                 Find out more
-                <span aria-hidden="true" className="block transition-all group-hover:ms-0.5">
-                  &rarr;
-                </span>
+                <span className="block transition-all group-hover:ms-0.5">&rarr;</span>
               </Link>
             </div>
           </motion.article>
         ))}
       </div>
 
-      {/* Show More Button */}
       {!showAll && (
         <motion.div
           className="mt-10 text-center"

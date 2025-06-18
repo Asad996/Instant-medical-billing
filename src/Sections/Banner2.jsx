@@ -35,9 +35,9 @@ const Banner2 = () => {
           </motion.h2>
 
           {[
-            "Being the best medical billing and coding company, HMS offers a suite of services to help practices stay compliant with all applicable regulations, including HIPAA, Affordable Care Act (ACA), and state-specific regulations. Our experts can help you develop effective policies and procedures to ensure compliance.",
-            "We understand the challenges you face. With our advanced analytics skills, you will uncover meaningful insights to enhance your revenue. We have a proven track record of success in helping practices improve their revenue cycle management.",
-            "HMS has a team of medical coding, billing, and practice management experts who can work with you to streamline your operations, reduce managerial burdens, and improve compliance. We have helped hundreds of medical practices and healthcare centers adapt to industry changes and become more profitable."
+            "At InstantBillings, we specialize in comprehensive medical billing and coding solutions designed to keep your practice compliant, efficient, and profitable. Our team ensures full adherence to HIPAA, the Affordable Care Act (ACA), and state-specific regulations—giving you peace of mind in a complex regulatory landscape.",
+            "With our advanced analytics and revenue cycle expertise, we uncover key insights that help boost your revenue and reduce denials. Our certified billing and coding professionals streamline operations, minimize administrative burdens, and improve claim accuracy.",
+            "Trusted by healthcare providers across the U.S., InstantBillings has a proven track record of enhancing compliance and maximizing reimbursements for small to mid-sized practices."
           ].map((para, i) => (
             <motion.p
               key={i}

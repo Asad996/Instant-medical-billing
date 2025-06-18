@@ -366,11 +366,11 @@ const Services = {
             image: img4,
             heading: "Patient Statement Services for Providers",
             paragraph1:
-                "The process of identifying patient balances, running custom reports, keeping track of records, and creating and mailing patient statements can be time-consuming and frustrating for the medical provider and office staff. HMS patient statement services take the hassle out of this process and make it more efficient.",
+                "Managing patient balances, generating reports, and sending out statements can drain your team’s time and resources. At InstantBillings, we simplify the process with professional patient statement services designed to improve efficiency and increase collections.",
             paragraph2:
-                "We provide practices with patient billing and statement services that allow them to minimize their administrative costs while increasing patient collections. Our expert team creates easy-to-understand patient statements and mails them out to patients while keeping accurate records for compliance purposes.",
+                "Our team creates clear, easy-to-understand statements, tracks all communications, and ensures accurate recordkeeping for compliance. By outsourcing this task, your practice can reduce administrative overhead and focus more on delivering quality care.",
             paragraph3:
-                "As a medical billing company, we know how to tailor our services to fit the needs of any size practice. We streamline the complete patient billing process and make it as efficient as possible. Let us take care of billing and statements so you can focus on what you do best - providing quality healthcare services.",
+                "Whether you're a solo provider or a growing group practice, InstantBillings tailors patient billing services to fit your needs—streamlining your workflow and maximizing revenue.",
             buttonText: "Contact Us",
         },
         qualities: [
@@ -428,50 +428,44 @@ const Services = {
 
         imageBanner: {
             image: img5,
-            heading: "Medical Front Office Administrative Specialist",
+            heading: "First impressions matter—especially in healthcare",
             paragraph1:
-                "For a medical practice, the first impression is crucial for patients to ensure they feel welcomed and comfortable. The front office staff help patients understand their clinical processes and handle the complete paperwork. Our provides comprehensive front office management for healthcare practices.",
+                " At InstantBillings, our front office administrative services ensure that every patient interaction is professional, welcoming, and efficient. We support your practice with complete front desk management, from appointment scheduling and patient alerts to payment handling and data coordination.",
             paragraph2:
-                "To streamline the practice revenue, Instant Billing front office management provides a one window solution to help medical practices schedule patient appointments, alerts, and patient payments. Our dedicated front office staff offers add-on services to reduce your administrative burden, including CCM, RPM, and data management solutions.",
+                "Our skilled front office team also manages critical administrative tasks like insurance verification, prior authorizations, eligibility checks, CCM, RPM, and more. By streamlining communication and paperwork, we help reduce your staff’s burden while keeping your operations smooth and patient-focused.",
             paragraph3:
-                "We make the front office process explicit for your medical practice. HMS takes the hassle of handling patient appointments, insurance verification, authorizations, eligibility, and more so that you can focus on your patients' healthcare. Our front office administrative staff helps medical offices effectively communicate with patients and staff.",
+                "Let InstantBillings handle the front-end tasks, so your practice can focus on what matters most—quality patient care.",
             buttonText: "Contact Us",
         },
         qualities: [
             {
                 icon: Scheduling,
                 title: 'Patient Scheduling and Confirmation',
-                description: 'Our front office staff create patient appointments, send reminders, and perform confirmation calls to make the scheduling seamless for patients and clinics.'
+                description: 'Our front office team handles patient scheduling with precision and care. We create appointments, send timely reminders, and make confirmation calls to ensure a smooth and organized experience for both patients and clinics. This helps reduce no-shows, improve patient satisfaction, and keep your schedule running efficiently.'
             },
             {
                 icon: Eligibility,
                 title: 'Eligibility and Authorization',
-                description: 'Proactively perform patient eligibility and get the pre-authorization from insurances for healthcare services, leading practice to reduce denial ratio and increase reimbursement.'
+                description: 'We proactively verify patient eligibility and secure pre-authorizations to reduce denials and boost reimbursements for your practice.'
             },
             {
                 icon: Referral,
                 title: 'Referral Management',
-                description: 'Manage patient referral process with Instant Billing. Our team reaches out to a qualified medical specialist, arranges an appointment, and transmits the medical notes via an electronic system.'
+                description: 'InstantBillings streamlines the patient referral process by coordinating with specialists, scheduling appointments, and securely transmitting medical records—ensuring smooth and timely care transitions.'
             }
             ,
             {
                 icon: Calls,
                 title: 'Inbound and Outbound Calls',
-                description: 'We are always ready to manage the practice calls. Instant Billing handles patient communication and routing calls to the right person for your patient to have an effortless experience.'
+                description: 'InstantBillings manages all inbound and outbound calls, ensuring patients are promptly assisted and routed to the right contact—creating a seamless communication experience for your practice.'
             }
             ,
             {
                 icon: Payments,
                 title: 'Patient Payments Collection',
-                description: 'Our team assists your patients in performing electronic transactions based on the doctors directive. This process assures prompt payments and collection.'
+                description: 'InstantBillings helps patients make secure electronic payments as directed by their provider, ensuring faster collections and improved cash flow for your practice.'
             },
-            {
-                icon: Feedback,
-                title: 'Patient Query and Feedback Management',
-                description: 'Quickly and easily handle patient queries and feedback With Instant Billing. We manage patient feedback to build and enhance your practices reputation and improve patient satisfaction.'
-            }
-            ,
-
+           
         ]
 
     },
@@ -508,49 +502,33 @@ const Services = {
 
         imageBanner: {
             image: img6,
-            heading: "CMS Provider Quality Payment Program",
+            heading: "QPP & MIPS Support for Healthcare Providers",
             paragraph1:
-                "This is undoubtedly true - healthcare providers want to ensure they are reimbursed relatively for their services while maintaining compliance with the CMS provider quality payment program. At Instant Billing, we make it easier for practices to comply with HEDIS quality measures. We provide data abstraction, care gap analysis, and population health management services.",
+                "At InstantBillings, we help healthcare providers stay compliant with CMS’s Quality Payment Program (QPP) while maximizing their incentive payments. Our experts support practices with data abstraction, care gap analysis, HEDIS compliance, and population health management.",
             paragraph2:
-                "Our QPP healthcare suite of services helps medical providers with the Merit-based Incentive Payment System (MIPS). Our specialists help medical practitioners to meet provider quality payment program measures. ",
+                "We specialize in helping providers succeed under the Merit-based Incentive Payment System (MIPS), ensuring you meet all performance measures. By tracking quality metrics and optimizing reporting, we help you avoid penalties and secure positive payment adjustments.",
             paragraph3:
-                " Instant Billing is the solution for maximizing incentivized payments and minimizing penalties for healthcare providers. Our HCG experts ensure that providers receive the highest possible score on quality performance, ensuring positive payment adjustments and preventing penalization.",
+                " Let InstantBillings guide your practice through QPP compliance—so you can focus on care, while we focus on your performance and revenue.",
             buttonText: "Contact Us",
         },
         qualities: [
             {
                 icon: improvement,
                 title: 'Quality improvement consulting',
-                description: 'We offer quality improvement consulting services to help you improve your performance on quality measures. Our consultants can provide customized assistance based on your needs to help you strategize, plan, and implement quality improvement initiatives.'
+                description: 'InstantBillings provides expert consulting to help your practice improve performance on quality measures. We offer customized strategies and hands-on support to implement effective quality improvement initiatives tailored to your needs.'
             },
             {
                 icon: Analysis,
                 title: 'Data Analysis and Reporting',
-                description: 'We offer data analysis and reporting services to help you understand your performance data. We can help you identify areas for improvement and track your progress over time so that you can make informed decisions about quality improvement initiatives.'
+                description: 'InstantBillings provides detailed data analysis and reporting to help you monitor performance, identify gaps, and track progress. Our insights support informed decision-making and drive continuous quality improvement in your practice.'
             },
             {
                 icon: Chart,
                 title: 'Chart reviews',
-                description: 'We take a collaborative approach to chart reviews that engages providers in the process. Our goal is to identify opportunities for quality improvement while maintaining the highest standards to protect patient privacy and confidentiality.'
+                description: 'InstantBillings conducts collaborative chart reviews to uncover quality improvement opportunities while ensuring full compliance with privacy standards. We work closely with providers to maintain accurate documentation and enhance care outcomes.'
             }
             ,
-            {
-                icon: practice,
-                title: 'Initial practice assessment',
-                description: 'Instant Billing offers an initial practice assessment in which our team analyzes and reviews your practice against the NCQA standards. This will develop a road map for your PCMH recognition and certification.'
-            }
-            ,
-            {
-                icon: facilitation,
-                title: 'Site visit facilitation',
-                description: 'We facilitate onsite visits from NCQA CCEs and help you meet PCMH certification requirements. This will ensure that your practice is prepared for the site visit and that you understand what to expect.'
-            },
-            {
-                icon: Analysis,
-                title: 'Gap analysis and report',
-                description: 'We will provide a detailed gap analysis report to help you understand the areas where your practice needs to improve to meet the PCMH standards. This ensures that you focus on the progress towards certification.'
-            }
-            ,
+           
 
         ]
 
