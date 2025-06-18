@@ -132,7 +132,7 @@ const Navbar = () => {
                 </Link>
 
                 <Link to="/Blogpage" onClick={() => setIsOpen(false)}>
-                  <span className="block text-gray-700 hover:text-teal-600">Blog</span>
+                  <span className="block text-gray-700 hover:text-teal-600 pt-4">Blog</span>
                 </Link>
 
                 {/* Mobile Specialties Toggle */}
