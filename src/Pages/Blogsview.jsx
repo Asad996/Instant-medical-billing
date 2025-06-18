@@ -1,6 +1,6 @@
 import React from 'react'
-import BlogPageBanner from '../Shared/BlogPageBanner'
-import BlogMain from '../Shared/BlogMain'
+import BlogPageBanner from '../Components/BlogPageBanner'
+import BlogMain from '../Components/BlogMain'
 
 const Blogsview = () => {
   return (

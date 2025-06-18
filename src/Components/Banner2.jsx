@@ -14,7 +14,7 @@ const paragraphAnimation = {
 const Banner2 = () => {
   return (
     <section className="overflow-hidden sm:grid sm:grid-cols-2 sm:items-center">
-      
+
       {/* Text Content */}
       <motion.div
         className="p-8 md:p-12 lg:px-16 lg:py-24"
@@ -71,7 +71,7 @@ const Banner2 = () => {
 
       {/* Image */}
       <motion.div
-        className="hidden md:block"
+        className="hidden md:flex justify-center items-center"
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
@@ -80,9 +80,10 @@ const Banner2 = () => {
         <img
           alt="Medical Billing Illustration"
           src={protectionImage}
-          className="w-full object-cover sm:h-[calc(100%_-_2rem)] sm:rounded-tl-[30px] md:h-[calc(100%_-_4rem)] md:rounded-tl-[60px]"
+          className="w-[80%] object-contain sm:rounded-tl-[30px] md:rounded-tl-[60px]"
         />
       </motion.div>
+
     </section>
   );
 };

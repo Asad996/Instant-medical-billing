@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 import bgimg from '../assets/img/8de1f6a4-d72a-4828-91e4-62a71d506312.jpg';
 
 const contactInfo = [
@@ -31,26 +32,36 @@ const Contactusbanner = () => {
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-        {/* Content */}
-        <div className="relative z-10 text-center px-4">
+        {/* Animated Content */}
+        <motion.div
+          className="relative z-10 text-center px-4"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <h1 className="text-3xl md:text-5xl font-bold mb-3">Contact Us</h1>
           <p className="max-w-2xl mx-auto text-base md:text-lg">
             We're here to help. Reach out to us anytime and we'll happily answer your questions.
           </p>
-        </div>
+        </motion.div>
       </div>
 
-      {/* Info Boxes */}
+      {/* Info Boxes with Animation */}
       <div className="w-full px-4 sm:px-8 py-10 bg-white flex flex-col md:flex-row md:justify-between gap-6 -mt-12 z-20 relative">
         {contactInfo.map((item, index) => (
-          <div
+          <motion.div
             key={index}
             className="bg-white border border-gray-200 text-gray-800 p-6 rounded-xl shadow-md flex flex-col items-center text-center w-full md:w-1/3"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true }}
           >
             {item.icon}
             <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
             <p className="text-sm">{item.description}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

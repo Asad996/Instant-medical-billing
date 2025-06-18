@@ -2,11 +2,11 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import serviceData from '../Helpers/Services';
 
-import Banner3 from '../Shared/Banner3';
-import InfoBoxes from '../Shared/InfoBoxes';
-import Imgbanner from '../Shared/Imgbanner';
-import Qualities from '../Shared/Qualitites';
-import ContactSection from '../Sections/ContactSection';
+import Banner3 from '../Components/Banner3';
+import InfoBoxes from '../Components/InfoBoxes';
+import Imgbanner from '../Components/Imgbanner';
+import Qualities from '../Components/Qualitites';
+import ContactSection from '../Components/ContactSection';
 
 const ServicePage = () => {
   const { serviceId } = useParams();

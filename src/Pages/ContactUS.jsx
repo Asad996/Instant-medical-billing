@@ -1,6 +1,6 @@
 import React from 'react'
-import Contactusbanner from '../Sections/Contactusbanner'
-import ContactSection2 from '../Sections/ContactSection2'
+import Contactusbanner from '../Components/Contactusbanner'
+import ContactSection2 from '../Components/ContactSection2'
 
 
 

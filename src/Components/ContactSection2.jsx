@@ -1,11 +1,18 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const ContactSection2 = () => {
     return (
-        <section className="text-gray-600 body-font relative ">
+        <section className="text-gray-600 body-font relative">
             <div className="container px-5 pt-2 pb-20 mx-auto">
                 {/* Section Title */}
-                <div className="text-center mb-20">
+                <motion.div
+                    className="text-center mb-20"
+                    initial={{ opacity: 0, y: -30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7 }}
+                    viewport={{ once: true }}
+                >
                     <h1 className="sm:text-[50px] text-4xl font-bold title-font text-[#7BAB0A] mb-4">
                         Contact Us
                     </h1>
@@ -15,13 +22,20 @@ const ContactSection2 = () => {
                     <div className="flex mt-6 justify-center">
                         <div className="w-96 h-1 rounded-full bg-[#7BAB0A] inline-flex"></div>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Flex Container */}
                 <div className="flex flex-col md:flex-row gap-10">
                     {/* Contact Form */}
-                    <div className="md:w-1/2 w-full">
+                    <motion.div
+                        className="md:w-1/2 w-full"
+                        initial={{ opacity: 0, x: -40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true }}
+                    >
                         <div className="flex flex-wrap -m-2">
+                            {/* Name */}
                             <div className="p-2 w-1/2">
                                 <div className="relative">
                                     <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>
@@ -33,6 +47,7 @@ const ContactSection2 = () => {
                                     />
                                 </div>
                             </div>
+                            {/* Email */}
                             <div className="p-2 w-1/2">
                                 <div className="relative">
                                     <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
@@ -44,6 +59,7 @@ const ContactSection2 = () => {
                                     />
                                 </div>
                             </div>
+                            {/* Message */}
                             <div className="p-2 w-full">
                                 <div className="relative">
                                     <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
@@ -54,16 +70,23 @@ const ContactSection2 = () => {
                                     ></textarea>
                                 </div>
                             </div>
+                            {/* Button */}
                             <div className="p-2 w-full">
                                 <button className="flex mx-auto text-white bg-[#7BAB0A] border-0 py-2 px-8 focus:outline-none hover:bg-[#374710] rounded text-lg">
                                     Submit
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* Right Side Content */}
-                    <div className="md:w-1/2 w-full text-gray-700">
+                    <motion.div
+                        className="md:w-1/2 w-full text-gray-700"
+                        initial={{ opacity: 0, x: 40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true }}
+                    >
                         <h2 className="text-2xl font-bold text-[#7BAB0A] mb-4">Free Medical Consulting Services</h2>
                         <p className="mb-4">
                             We help you generate revenue for your healthcare practice and reduce time and effort managing administrative tasks.
@@ -83,7 +106,7 @@ const ContactSection2 = () => {
                         <button className="text-white bg-[#7BAB0A] border-0 py-2 px-8 focus:outline-none hover:bg-[#374710] rounded text-lg">
                             Get Free Consultation
                         </button>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

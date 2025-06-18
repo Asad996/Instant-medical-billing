@@ -1,7 +1,7 @@
 import React from 'react'
-import Banner3 from '../Shared/Banner3'
-import BlogPageBanner from '../Shared/BlogPageBanner'
-import Blogs from '../Sections/Blogs'
+
+import BlogPageBanner from '../Components/BlogPageBanner'
+import Blogs from '../Components/Blogs'
 
 const BlogPage = () => {
   return (

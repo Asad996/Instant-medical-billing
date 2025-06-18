@@ -51,9 +51,6 @@ import Tricare from '../assets/Favicon/stars.png';
 import Recredentialing from "../assets/Favicon/id-card.png";
 import Licensing from "../assets/Favicon/notes.png";
 import Enrollment from "../assets/Favicon/contract.png";
-import IPA from "../assets/Favicon/group.png";
-import Contract from "../assets/Favicon/agreement.png";
-import Accreditation from "../assets/Favicon/value.png";
 
 // ------------------------Patient Payments----------------------
 
@@ -87,7 +84,7 @@ import Eligibility from "../assets/Favicon/authorize.png";
 import Referral from "../assets/Favicon/collaboration.png";
 import Calls from "../assets/Favicon/telephone-call.png";
 import Payments from "../assets/Favicon/give-money.png";
-import Feedback from "../assets/Favicon/feedback-survey.png";
+
 
 // -----------------------------------Provider QPP--------------------
 import bannerimg6 from "../assets/img/These are the best investments physicians can make.jpeg";
@@ -102,9 +99,7 @@ import CCM from '../assets/Favicon/responsibility.png';
 import improvement from "../assets/Favicon/inclusion.png";
 import Analysis from "../assets/Favicon/search-analysis.png";
 import Chart from "../assets/Favicon/seo-report.png";
-import practice from "../assets/Favicon/monitor.png";
-import facilitation from "../assets/Favicon/buliding.png";
-import report from "../assets/Favicon/agreement.png";
+
 
 const Services = {
     "medical-billing": {

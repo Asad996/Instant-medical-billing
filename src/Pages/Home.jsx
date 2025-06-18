@@ -1,15 +1,15 @@
 import React from 'react'
 
-import Banner from '../Sections/Banner'
-import Services from '../Sections/Services'
-import Experience from '../Sections/Experience'
-import Specialetie from '../Sections/Specialetie'
-import Banner2 from '../Sections/Banner2'
+import Banner from '../Components/Banner'
+import Services from '../Components/Services'
+import Experience from '../Components/Experience'
+import Specialetie from '../Components/Specialetie'
+import Banner2 from '../Components/Banner2'
 
-import Blogs from '../Sections/Blogs'
-import ContactSection from '../Sections/ContactSection'
-import CertificatesSection from '../Sections/CertificatesSection'
-import TestimonialCarousel from '../Shared/TestimonialCarousel'
+import Blogs from '../Components/Blogs'
+import ContactSection from '../Components/ContactSection'
+import CertificatesSection from '../Components/CertificatesSection'
+import TestimonialCarousel from '../Components/TestimonialCarousel'
 
 
 const Home = () => {
