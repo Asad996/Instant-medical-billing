@@ -57,7 +57,7 @@ const Navbar = () => {
                       </Link>
                     </li>
 
-                   
+
 
                     <li>
                       <Link
@@ -127,8 +127,13 @@ const Navbar = () => {
           {isOpen && (
             <div className="fixed top-[118px] left-0 w-full bg-white shadow-lg z-50">
               <div className="px-4 py-4 space-y-4 text-sm">
-                <a className="block text-gray-700 hover:text-teal-600" href="#"><Link to="/">Who We Are</Link></a>
-               <a className="block text-gray-700 hover:text-teal-600" href="#"> <Link to="/Blogpage">Blog</Link></a>
+                <Link to="/" onClick={() => setIsOpen(false)}>
+                  <span className="block text-gray-700 hover:text-teal-600">Who We Are</span>
+                </Link>
+
+                <Link to="/Blogpage" onClick={() => setIsOpen(false)}>
+                  <span className="block text-gray-700 hover:text-teal-600">Blog</span>
+                </Link>
 
                 {/* Mobile Specialties Toggle */}
                 <button
@@ -141,25 +146,30 @@ const Navbar = () => {
                 {showMobileDropdown && (
                   <div className="pl-4 space-y-1">
                     {specialties.map((spec, i) => (
-                      <a
+                      <Link
                         key={i}
-                        href="#"
+                        to={`/specialties/${spec.toLowerCase().replace(/\s+/g, '-')}`}
+                        onClick={() => {
+                          setIsOpen(false);
+                          setShowMobileDropdown(false);
+                        }}
                         className="block text-gray-600 hover:text-[#7BAB0A] transition"
                       >
                         {spec}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}
 
-                
-
-                <Link to="/contact"> <a className="block text-white bg-[#7BAB0A] text-center py-2 mt-6 rounded hover:bg-[#3f5213]" href="#">
-                  Contact US
-                </a></Link>
+                <Link to="/contact" onClick={() => setIsOpen(false)}>
+                  <span className="block text-white bg-[#7BAB0A] text-center py-2 mt-6 rounded hover:bg-[#3f5213]">
+                    Contact US
+                  </span>
+                </Link>
               </div>
             </div>
           )}
+
         </header>
       </div>
 
