@@ -13,8 +13,9 @@ const Imgbanner = ({ data }) => {
       <motion.div
         className="w-full md:w-1/2 hidden md:block"
         initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
       >
         <img
           src={image}
@@ -27,33 +28,40 @@ const Imgbanner = ({ data }) => {
       <motion.div
         className="w-full md:w-1/2 space-y-4 text-center md:text-left"
         initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.2 }}
+        viewport={{ once: true, amount: 0.3 }}
       >
         <h2 className="text-3xl font-bold text-[#7BAB0A]">
           {heading}
         </h2>
+
         <motion.p
           className="text-gray-600"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           {paragraph1}
         </motion.p>
+
         <motion.p
           className="text-gray-600"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           {paragraph2}
         </motion.p>
+
         <motion.p
           className="text-gray-600"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.7 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           {paragraph3}
         </motion.p>

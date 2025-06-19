@@ -19,15 +19,17 @@ const Qualities = ({ features }) => {
   return (
     <motion.div
       className="py-10 px-6 md:px-12 bg-white text-center pt-28"
-      initial="hidden"
-      animate="visible"
       variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
     >
       <motion.h2
         className="text-3xl md:text-4xl font-bold text-[#7BAB0A] mb-4"
         initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
+        viewport={{ once: true, amount: 0.3 }}
       >
         Transforming Medical Billing Services for Small Practices with Instant Precision.
       </motion.h2>
@@ -35,8 +37,9 @@ const Qualities = ({ features }) => {
       <motion.p
         className="text-gray-600 max-w-3xl mx-auto mb-10"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        whileInView={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
       >
         Instant Medical Billing is the leading medical billing services company that delivers a reliable, swift, and reasonable pricing model to ensure that your practice gets the maximum reimbursement possible. We are a team of certified professional billers and coders covering every aspect of RCM billing services with utmost accuracy and efficiency.
       </motion.p>
@@ -45,7 +48,8 @@ const Qualities = ({ features }) => {
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
         variants={containerVariants}
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
       >
         {features.map((item, index) => (
           <motion.div
