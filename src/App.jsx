@@ -8,7 +8,7 @@ import ContactUS from './Pages/ContactUS'
 import BlogPage from './Pages/BlogPage'
 import ScrollToTop from './Common/ScrollToTop'
 import Blogsview from './Pages/Blogsview'
-import { Analytics } from '@vercel/analytics/next'
+
 
 
 function App() {
@@ -24,8 +24,6 @@ function App() {
             <Route path="/contact" element={<ContactUS/>} />
             <Route path="/Blogpage" element={<BlogPage/>}/>
             <Route path="/blog/:id" element={<Blogsview/>} />
-
-            <Analytics/>
           </Route>
         </Routes>
       </BrowserRouter>
