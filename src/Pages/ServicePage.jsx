@@ -22,8 +22,7 @@ const ServicePage = () => {
       <InfoBoxes data={service.infobox} />
       <Imgbanner data={service.imageBanner} />
       <Qualities features={service.qualities} />
-      {/* <TestimonialCarousel /> */}
-      {/* <Contactlocation /> */}
+    
       <ContactSection/>
     </>
   );
