@@ -13,7 +13,7 @@ const ContactSection = () => {
       className="text-gray-600 body-font relative"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false }} // Set to true if you want the animation to happen only once
+      viewport={{ once: true}} // Set to true if you want the animation to happen only once
       variants={variants}
       transition={{ duration: 0.5 }} // Adjust the duration as needed
     >
