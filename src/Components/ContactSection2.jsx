@@ -1,18 +1,24 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 
 const ContactSection2 = () => {
+    const variants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0 },
+    };
+
     return (
-        <section className="text-gray-600 body-font relative">
+        <motion.section
+            className="text-gray-600 body-font relative"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={variants}
+            transition={{ duration: 0.5 }}
+        >
             <div className="container px-5 pt-2 pb-20 mx-auto">
-                {/* Section Title */}
-                <motion.div
-                    className="text-center mb-20"
-                    initial={{ opacity: 0, y: -30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7 }}
-                    viewport={{ once: true }}
-                >
+                <div className="text-center mb-20">
                     <h1 className="sm:text-[50px] text-4xl font-bold title-font text-[#7BAB0A] mb-4">
                         Contact Us
                     </h1>
@@ -22,71 +28,11 @@ const ContactSection2 = () => {
                     <div className="flex mt-6 justify-center">
                         <div className="w-96 h-1 rounded-full bg-[#7BAB0A] inline-flex"></div>
                     </div>
-                </motion.div>
+                </div>
 
-                {/* Flex Container */}
-                <div className="flex flex-col md:flex-row gap-10">
-                    {/* Contact Form */}
-                    <motion.div
-                        className="md:w-1/2 w-full"
-                        initial={{ opacity: 0, x: -40 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8 }}
-                        viewport={{ once: true }}
-                    >
-                        <div className="flex flex-wrap -m-2">
-                            {/* Name */}
-                            <div className="p-2 w-1/2">
-                                <div className="relative">
-                                    <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                    />
-                                </div>
-                            </div>
-                            {/* Email */}
-                            <div className="p-2 w-1/2">
-                                <div className="relative">
-                                    <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                    />
-                                </div>
-                            </div>
-                            {/* Message */}
-                            <div className="p-2 w-full">
-                                <div className="relative">
-                                    <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                                    ></textarea>
-                                </div>
-                            </div>
-                            {/* Button */}
-                            <div className="p-2 w-full">
-                                <button className="flex mx-auto text-white bg-[#7BAB0A] border-0 py-2 px-8 focus:outline-none hover:bg-[#374710] rounded text-lg">
-                                    Submit
-                                </button>
-                            </div>
-                        </div>
-                    </motion.div>
-
-                    {/* Right Side Content */}
-                    <motion.div
-                        className="md:w-1/2 w-full text-gray-700"
-                        initial={{ opacity: 0, x: 40 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8 }}
-                        viewport={{ once: true }}
-                    >
+                <div className="flex flex-wrap md:flex-nowrap gap-10 justify-center items-center ">
+                    {/* Left Side - Paragraph */}
+                    <div className="md:w-1/2 w-full px-4 bg-[#dadada50] p-12 rounded-3xl ">
                         <h2 className="text-2xl font-bold text-[#7BAB0A] mb-4">Free Medical Consulting Services</h2>
                         <p className="mb-4">
                             We help you generate revenue for your healthcare practice and reduce time and effort managing administrative tasks.
@@ -98,18 +44,51 @@ const ContactSection2 = () => {
                             efficiently. With our experience and knowledge, we provide quality medical practice billing service to clients and
                             help them achieve their goals.
                         </p>
-                        <p className="mb-6">
-                            Take advantage of HMS free consultation services to experience how we can help your practice run more efficiently to
-                            increase revenue. We offer various medical practice management services to help manage administrative tasks for better
-                            patient healthcare. Let us become an extension of your practice success.
-                        </p>
-                        <button className="text-white bg-[#7BAB0A] border-0 py-2 px-8 focus:outline-none hover:bg-[#374710] rounded text-lg">
-                            Get Free Consultation
-                        </button>
-                    </motion.div>
+                       
+                    </div>
+
+                    {/* Right Side - Contact Form */}
+                    <div className="md:w-1/2 w-full">
+                        <div className="flex flex-col space-y-8">
+                            <div>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder='Name'
+                                    name="name"
+                                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-[#7BAB0A] focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-2 px-4 transition duration-200"
+                                />
+                            </div>
+                            <div>
+
+                                <input
+                                    placeholder='Email'
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-[#7BAB0A] focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-2 px-4 transition duration-200"
+                                />
+                            </div>
+                            <div>
+
+                                <textarea
+                                    placeholder='Massege'
+                                    id="message"
+                                    name="message"
+                                    className="w-full h-32 bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-[#7BAB0A] focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-2 px-4 resize-none transition duration-200"
+                                ></textarea>
+                            </div>
+                            <div>
+                                <button className="w-full text-white bg-[#7BAB0A] border-0 py-2 px-8 focus:outline-none hover:bg-[#374710] rounded text-lg">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 };
 

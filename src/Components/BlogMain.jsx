@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import sanityClient from '../Sanity/sanityClient';
 import { PortableText } from '@portabletext/react';
 import { motion } from 'framer-motion';
-
 import ContactSection from '../Components/ContactSection';
 import Specialetie from '../Components/Specialetie';
 import Blogs from '../Components/Blogs';
@@ -16,10 +15,16 @@ const BlogMain = () => {
     sanityClient
       .fetch(
         `*[_type == "post" && slug.current == $slug][0]{
-            title,
-            mainImage{ asset->{url} },
-            body
-          }`,
+          title,
+          metaTitle,
+          metaDescription,
+          publishedAt,
+          mainImage{ asset->{url} },
+          author->{name, image},
+          categories[]->{title},
+          tags,
+          body
+        }`,
         { slug: id }
       )
       .then(setBlog)
@@ -49,6 +54,17 @@ const BlogMain = () => {
             transition={{ delay: 0.3, duration: 0.6 }}
           />
 
+          {/* Meta & Info */}
+          <div className="mb-2 text-sm text-gray-500 flex flex-wrap gap-3 items-center">
+            <span>{new Date(blog.publishedAt).toLocaleDateString()}</span>
+            {blog.author?.name && <span>By {blog.author.name}</span>}
+            {blog.categories?.length > 0 && (
+              <span className="text-xs bg-[#7BAB0A] text-white px-2 py-1 rounded">
+                {blog.categories[0].title}
+              </span>
+            )}
+          </div>
+
           <motion.h1
             className="text-3xl font-bold text-[#7BAB0A] mb-4"
             initial={{ opacity: 0, y: -20 }}
@@ -59,13 +75,27 @@ const BlogMain = () => {
           </motion.h1>
 
           <motion.div
-            className="prose prose-green max-w-none"
+            className="prose prose-green max-w-none text-justify"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.6 }}
           >
             <PortableText value={blog.body} />
           </motion.div>
+
+          {/* Tags */}
+          {blog.tags?.length > 0 && (
+            <div className="mt-6 flex flex-wrap gap-2">
+              {blog.tags.map((tag, idx) => (
+                <span
+                  key={idx}
+                  className="text-xs bg-gray-200 px-2 py-1 rounded-full"
+                >
+                  #{tag}
+                </span>
+              ))}
+            </div>
+          )}
         </motion.div>
 
         {/* Sidebar */}
@@ -79,7 +109,7 @@ const BlogMain = () => {
         </motion.div>
       </div>
 
-      {/* Blog Cards */}
+      {/* More Blogs */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
